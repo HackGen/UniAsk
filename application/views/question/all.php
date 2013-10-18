@@ -54,7 +54,7 @@
 			</div>
 			<div class="view_post">
 				<strong><?php echo $user['name'];?> 問:</strong><br/>
-				<a href = 'http://114.35.129.223/UniAsk/answer/view/<?php echo $question['$questions_id']; ?>' ><?php echo $question['content']; ?> </a>
+				<a href = 'http://114.35.129.223/UniAsk/answer/view/<?php echo $questions['$question_id']; ?>' ><?php echo $questions['content']; ?> </a>
 				<!--<?php echo $questions['content']; ?>-->
 				<span class="date"><?php echo date("M d Y",$questions['date']);?></span>
 			</div>
