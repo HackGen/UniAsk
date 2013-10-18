@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf8" />
 	<title>UniAsk :: 由你問大學</title>
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>application/css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="application/css/style.css" media="screen" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
