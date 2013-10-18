@@ -12,10 +12,6 @@ class Question extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->helper('date');
 		
-		
-		
-		
-		
 	}
 	
 	public function index()
@@ -60,6 +56,7 @@ class Question extends CI_Controller {
 		$data['logged_in'] = $this->session->userdata('user_id');
 		$data['question'] = $this->question_model->get_question($question_id);
 		$data['title'] = $data['question']['content'];
+		$data['ques_id'] = $question_id ;
 		$data['user'] = $this->question_model->get_user($data['question']['user_id']);
 		
 		
@@ -70,6 +67,9 @@ class Question extends CI_Controller {
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('question/view', $data);
+		
+		
+		//$this->load->view('answer/view',$data);
 		$this->load->view('templates/footer');
 	}
 	
