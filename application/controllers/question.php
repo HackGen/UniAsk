@@ -11,6 +11,11 @@ class Question extends CI_Controller {
 		$this->load->library('session');
 		$this->load->helper('url');
 		$this->load->helper('date');
+		
+		
+		
+		
+		
 	}
 	
 	public function index()
