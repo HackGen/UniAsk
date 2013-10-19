@@ -4,30 +4,14 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf8" />
 	<title>UniAsk :: 由你問大學</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="assets/jqwidgets/styles/jqx.base.css" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
-	<script type="text/javascript" src="../../jqwidgets/jqxwindow.js"></script>
-	<script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
-	<script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
-	<script type="text/javascript" src="../../jqwidgets/jqxpanel.js"></script>
-	<script type="text/javascript" src="../../jqwidgets/jqxtabs.js"></script>
-	<script type="text/javascript" src="../../jqwidgets/jqxcheckbox.js"></script>
-<script>
-function createWindow() {
-	$("#window").jqxWindow({
-		height: 300,
-		width: 600,
-		resizable: false,
-		isModal: trye,
-		autoOpen: false,
-		modalOpacity: 0.3
-	});
-}
-$(document).ready(function() {
-	windowButton.click(function(event) {
-		$("#window").jqxWindow("open");
-	});
-});
+	<script type="text/javascript" src="assets/jqwidgets/jqxcore.js"></script>
+	<script type="text/javascript" src="assets/jqwidgets/jqxwindow.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#jqxwindow").jqxWindow({height: 300, width: 600, theme: 'base'});
+		}); 
 	</script>
 
 	<style>
@@ -44,7 +28,18 @@ $(document).ready(function() {
 	</style>
 </head>
 <body>
+<div id="jqxwindow">
+	<?php
+		if($logged_in==TRUE) {
+			echo "<div id='question_create_button'>發問</div>";
+			echo "<div id='question_create_div'>";
+			
+			$this->load->view('question/create');
+			echo "</div>";
+		}
+	?>
 
+</div>
 <header>
 	<div class="header_logo"><a href="">UNIASK</a></div>
 	<div class="header_login">
@@ -77,9 +72,6 @@ $(document).ready(function() {
 			$this->load->view('question/create');
 			echo "</div>";
 		}
-		//echo "<div id='question_create_button' style='margin:20px;'>最新問題</div>";
-		//$data['question'] = $this->question_model->get_question();
-		//$this->load->view('question/all', $data);
 	?>
 
 	<div id="div">
