@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <?php
 echo $user_id."\n";
 echo $date."\n";
