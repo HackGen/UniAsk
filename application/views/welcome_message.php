@@ -54,10 +54,14 @@
 				isModal: true,
 				modalOpacity: 0.3
 			});
-			$("#windowButton").jqxButton({theme: 'base', width: 100});
-			$("#windowButton").click(function() {
-				$("#jqxwindow").jqxWindow("open");
-			})
+<?php
+			if($logged_in == TRUE) {
+			echo '$("#windowButton").jqxButton({theme: "base", width: 100});';
+			echo '$("#windowButton").click(function() {';
+			echo '$("#jqxwindow").jqxWindow("open");';
+			echo '})';
+			}
+?>
 		}); 
 	</script>
 
@@ -66,11 +70,6 @@
 			color: #0bb492;
 			font-size: 30px;
 			font-weight: bold;
-		}
-
-		#hot_question_field {
-		}
-		#latest_question_field {
 		}
 	</style>
 </head>
@@ -109,7 +108,10 @@
 	<div id="search_div">
 		<?php $this->load->view('search/index'); ?>
 	</div>
-	<button id="windowButton">發問</button>
+<?php if($logged_in == TRUE) {
+echo '	<button id="windowButton">發問</button>'
+}
+?>
 	
 	<div id="div">
 		<div id="form_div">
