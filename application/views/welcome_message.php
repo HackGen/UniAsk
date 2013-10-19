@@ -108,10 +108,6 @@
 	<div id="search_div">
 		<?php $this->load->view('search/index'); ?>
 	</div>
-<?php if($logged_in == TRUE) {
-echo '	<button id="windowButton">發問</button>';
-}
-?>
 	
 	<div id="div">
 		<div id="form_div">

@@ -13,7 +13,7 @@
 #search {
 	display: inline-block;
 	text-align: center;
-	margin-top: 160px;
+	margin-top: 140px;
 	color: #fff;
 }
 
@@ -48,9 +48,15 @@
 
 <div id="div">
 	<div id="search">
+		<h1>UniAsk</h1>
 		<input type="text" id="search_text2" placeholder="搜尋你覺得困擾的問題..." />
 		<br/><br/>
 		例子: 交通大學 假單 | 如何繳費? | 獎學金
+		<br/><br/>
+		<?php if($logged_in == TRUE) {
+		echo '	<button id="windowButton">發問</button>';
+		}
+		?>
 	</div>
 </div>
 
