@@ -10,7 +10,7 @@ echo $email."\n";
 
 ?>
 <div class="view_pic"> 
-<img src="https://graph.facebook.com/'<?php $fb_id ?> '/picture?height=100&width=100" />
+<img src="https://graph.facebook.com/<?php echo $fb_id ?>/picture?height=100&width=100" />
 </div>
 
 </html>
