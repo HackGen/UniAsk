@@ -12,10 +12,11 @@ class Search_model extends CI_Model {
 		$search_keywords = explode(' ', trim($search_keyword));
 		
 		foreach($search_keywords as $search_keyword) {
-			$this->db->like("catalog_school", $search_keyword);
-			$this->db->like("catalog_detail", $search_keyword);
-			$this->db->like("content", $search_keyword);
+			$this->db->or_like("catalog_school", $search_keyword);
+			$this->db->or_like("catalog_detail", $search_keyword);
+			$this->db->or_like("content", $search_keyword);
 		}
+		
 		$query = $this->db->get("questions");
 		return $query->result_array();
 	}
