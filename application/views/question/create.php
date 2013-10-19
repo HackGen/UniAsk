@@ -77,11 +77,13 @@
 		<div class="question_post">
 			<textarea name="text"></textarea><br />
 			<div class="question_tag">
-				<select name="catalog_school">
 <?php
-$query = $this->db->get('question');
+$query = $this->db->get('catalog_school');
+echo $query->result_array();
+$query = $this->db->get('catalog_detail');
 echo $query->result_array();
 ?>
+				<select name="catalog_school">
 				</select>
 				<input type="submit" name="submit" value="發問" />
 			</div>
