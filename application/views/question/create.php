@@ -61,20 +61,19 @@
 	background: #0bb492;
 }
 
-.question_tag {
+.question_submit {
 	border-top: 1px solid #e6e6e6;
 }
 
+.question_tag {
+	border-bottom: 1px solid #e6e6e6;
+}
+.question_tag #div {
+	float: left;
+}
 </style>
 <!--<link href="http://114.35.129.223/UniAsk/assets/selectbox/css/jquery.selectbox.css" type="text/css" rel="stylesheet" />-->
-<link href="<?php echo base_url(); ?>/assets/jqwidgets/styles/jqx.base.css" type="text/css" rel="stylesheet" />
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxcore.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxbuttons.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxscrollbar.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxlistbox.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxdropdownlist.js"></script>
-
+<link href="http://114.35.129.223/UniAsk/assets/jqwidgets/styles/jqx.base.css" type="text/css" rel="stylesheet" />
 
 <?php echo validation_errors(); ?>
 <div id="div">
@@ -84,24 +83,34 @@
 			<img src="<?php echo $this->session->userdata('img'); ?>"  />
 		</div>
 		<div class="question_post">
+			<div class="question_tag">
+				<div id="schoollist"></div>
+				<div id="detaillist"></div>
+			</div>
+<!--
 			<select name="catalog_school" id="catalog_school" tabindex="1">
-				<?php
+<?php
+/*
 				$query = $this->db->query('SELECT school_name FROM catalog_school');
 				foreach($query->result_array() as $row) {
 					echo '<option name="' . $row['school_name'] . '">' . $row['school_name'] . '</option>';
 				}
+ */
 				?>
 			</select>
 			<select name="catalog_detail" id="catalog_detail" tabindex="1">
-				<?php
+<?php
+/*
 				$query = $this->db->query('SELECT detail_name FROM catalog_detail');
 				foreach($query->result_array() as $row) {
 					echo '<option name="' . $row['detail_name'] . '">' . $row['detail_name'] . '</option>';
 				}
+ */
 				?>
 			</select>
+-->
 			<textarea name="text"></textarea><br />
-			<div class="question_tag">
+			<div class="question_submit">
 				<input type="submit" name="submit" value="發問" />
 			</div>
 		</div>

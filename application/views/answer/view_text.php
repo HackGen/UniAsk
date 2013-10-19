@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
-
+<br>
 <div id="wysihtml5-toolbar">
-<ul class="commands">
-  <li data-wysihtml5-command="bold">bold</li>
-  <li data-wysihtml5-command="italic">italic</li>
-  <li data-wysihtml5-command="insertUnorderedList" title="Insert an unordered list" class="command"></li>
-  <li data-wysihtml5-command="insertOrderedList" title="Insert an ordered list" class="command"></li>
+  <a data-wysihtml5-command="bold">bold</a>
+  <a data-wysihtml5-command="italic">italic</a>
+  <a data-wysihtml5-command="insertOrderedList">insert ordered list</a>
+  <a data-wysihtml5-command="insertUnorderedList">insert unordered list</a>
   <!-- Some wysihtml5 commands require extra parameters -->
   <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>
   <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>
@@ -14,7 +13,7 @@
   
   <!-- Some wysihtml5 commands like 'createLink' require extra paramaters specified by the user (eg. href) -->
   <a data-wysihtml5-command="createLink">insert link</a>
-<\ul>
+  
   <div data-wysihtml5-dialog="createLink" style="display: none;">
     <label>
       Link:
@@ -33,8 +32,16 @@
 		var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element
   		toolbar:      "wysihtml5-toolbar", // id of toolbar element
   		parserRules:  wysihtml5ParserRules, // defined in parser rules set 
-		stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "css/editor.css"]
+		stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "css/stylesheet.css"]
 		});
+		
+		editor.on("load", function() {
+        var composer = editor.composer,
+            h1 = editor.composer.element.querySelector("h1");
+        if (h1) {
+          composer.selection.selectNode(h1);
+        }
+      });
 	</script>
 
 
