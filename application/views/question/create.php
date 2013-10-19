@@ -78,7 +78,10 @@
 			<textarea name="text"></textarea><br />
 			<div class="question_tag">
 				<select name="catalog_school">
-					<option name="成功大學">成功大學</option>
+<?php
+$query = $this->db->get('question');
+echo $query->result_array();
+?>
 				</select>
 				<input type="submit" name="submit" value="發問" />
 			</div>
