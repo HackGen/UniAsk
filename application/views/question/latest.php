@@ -34,7 +34,7 @@
 
 </style>
 
-<div>
+<div style="float: left;">
 	<?php 
 		$i = 0;
 		foreach ($question as $questions): 

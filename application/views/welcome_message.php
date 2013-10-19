@@ -47,7 +47,7 @@
 
 	
 	<div id="hot_question_field">
-		<div class='question_create_button' style='margin:20px;'>熱門問題</div>
+		<div class='container_title' style='margin:20px;'>熱門問題</div>
 		<?php
 			$data['question'] = $this->question_model->get_hot_question();
 			$this->load->view('question/hot', $data);
@@ -56,7 +56,7 @@
 
 
 	<div id="latest_question_field">
-		<div class='question_create_button' style='margin:20px;'>最新問題</div>
+		<div class='container_title' style='margin:20px;'>最新問題</div>
 		<?php
 			$data['question'] = $this->question_model->get_question();
 			$this->load->view('question/hot', $data);
