@@ -1,4 +1,4 @@
-<br>
+
 <div id="div">
 	<div id="view_div">
 		<div class="view_pic">
@@ -11,4 +11,5 @@
 		</div>
 	</div>
 </div>
+<?php echo $content; ?>
 
