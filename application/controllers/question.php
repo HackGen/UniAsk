@@ -67,7 +67,7 @@ class Question extends CI_Controller {
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('question/view', $data);
-		
+		$this->load->view('answer/view',$data);
 		
 		//$this->load->view('answer/view',$data);
 		$this->load->view('templates/footer');
