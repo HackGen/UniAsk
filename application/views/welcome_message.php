@@ -44,7 +44,7 @@
 		$data['question'] = $this->question_model->get_question();
 		$data['hot'] = $this->question_model->get_hot_question();
 		//$this->load->view('question/all', $data);
-		echo $data['hot'];
+		print_r( $data['hot']);
 		//$this->load->view('question/hot', $data);
 		$this->load->view('question/latest', $data);
 
