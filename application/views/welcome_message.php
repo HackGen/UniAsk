@@ -46,21 +46,23 @@
 	?>
 
 	<div id="div">
-		<div id="hot_question_field">
-			<div class='container_title' style='margin:20px;'>熱門問題</div>
-			<?php
-				$data['question'] = $this->question_model->get_hot_question();
-				$this->load->view('question/hot', $data);
-			?>
-		</div>
+		<div id="form_div">
+			<div id="hot_question_field">
+				<div class='container_title' style='margin:20px;'>熱門問題</div>
+				<?php
+					$data['question'] = $this->question_model->get_hot_question();
+					$this->load->view('question/hot', $data);
+				?>
+			</div>
 
 
-		<div id="latest_question_field">
-			<div class='container_title' style='margin:20px;'>最新問題</div>
-			<?php
-				$data['question'] = $this->question_model->get_question();
-				$this->load->view('question/hot', $data);
-			?>
+			<div id="latest_question_field">
+				<div class='container_title' style='margin:20px;'>最新問題</div>
+				<?php
+					$data['question'] = $this->question_model->get_question();
+					$this->load->view('question/hot', $data);
+				?>
+			</div>
 		</div>
 	</div>
 	
