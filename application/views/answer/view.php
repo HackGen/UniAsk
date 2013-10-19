@@ -1,4 +1,5 @@
-
+<html>
+<body>
 <div id="div">
 	<div id="view_div">
 		<div class="view_pic">
@@ -12,4 +13,5 @@
 	</div>
 </div>
 <?php echo $content; ?>
-
+</body>
+</html>
