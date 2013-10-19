@@ -5,6 +5,7 @@
 	<title>UniAsk :: 由你問大學</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="assets/jqwidgets/styles/jqx.base.css" />
+	<link rel="stylesheet" type="text/css" href="assets/jqwidgets/styles/jqx.custom.css" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="assets/jqwidgets/jqxcore.js"></script>
 	<script type="text/javascript" src="assets/jqwidgets/jqxwindow.js"></script>
@@ -56,7 +57,7 @@
 			});
 <?php
 			if($logged_in == TRUE) {
-			echo '$("#windowButton").jqxButton({theme: "base", width: 100});';
+			echo '$("#windowButton").jqxButton({theme: "custom", width: 100});';
 			echo '$("#windowButton").click(function() {';
 			echo '$("#jqxwindow").jqxWindow("open");';
 			echo '})';
