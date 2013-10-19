@@ -7,7 +7,7 @@
 	font-weight: normal;
 	height: 30px;
 	position: relative;
-	width: 200px;
+	width: 120px;
 }
 .sbHolder:focus .sbSelector{
 	
@@ -22,7 +22,7 @@
 	position: absolute;
 	text-indent: 10px;
 	top: 0;
-	width: 170px;
+	width: 90px;
 }
 .sbSelector:link, .sbSelector:visited, .sbSelector:hover{
 	color: #EBB52D;
@@ -67,9 +67,8 @@
 	padding: 0;
 	position: absolute;
 	top: 30px;
-	width: 200px;
+	width: 120px;
 	z-index: 100;
-	max-height: 80px; display: block;
 	overflow-y: auto;
 }
 .sbOptions li{
