@@ -33,6 +33,7 @@ echo $email."\n";
     <a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
   </div>
 </div>
+<?php echo form_open('answer/view/'.$question_id) ?>
 <form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea></form>
 <input type="submit" name="submit" value="回答" />
 
