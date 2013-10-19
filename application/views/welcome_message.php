@@ -5,7 +5,6 @@
 	<title>UniAsk :: 由你問大學</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css" media="screen" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<<<<<<< HEAD
 	<script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
 	<script type="text/javascript" src="../../jqwidgets/jqxwindow.js"></script>
 	<script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
@@ -43,8 +42,6 @@ $(document).ready(function() {
 		#latest_question_field {
 		}
 	</style>
-=======
->>>>>>> 773f2a68618c671cbb2e4b4fb567d2286ae21666
 </head>
 <body>
 
