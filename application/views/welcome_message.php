@@ -34,11 +34,13 @@
 				source: school_source,
 				selectedIndex: 0,
 				width: 100,
+				height: 25
 			});
 			$("#detaillist").jqxDropDownList({
 				source: detail_source,
 				selectedIndex: 0,
 				width: 100,
+				height: 25
 			});
 			$("#jqxwindow").jqxWindow({
 				height: 300,
