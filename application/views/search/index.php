@@ -13,12 +13,12 @@
 #search {
 	display: inline-block;
 	text-align: center;
-	margin-top: 120px;
+	margin-top: 50px;
 	color: #fff;
 }
 
 #search h1 {
-	font-size: 30px;
+	font-size: 45px;
 }
 
 #search input[type="text"] {
@@ -47,6 +47,16 @@
     border-color: #aaa;
 }
 
+.question_create_button {
+
+	background: #12bb99;
+    	font-size: 30px;
+    	font-weight: bold;
+	color: #fff;
+	padding: 8px 20px;
+
+}
+
 </style>
 
 <div id="div">
@@ -57,7 +67,7 @@
 		例子: 交通大學 假單 | 如何繳費? | 獎學金
 		<br/><br/>
 		<?php if($logged_in == TRUE) {
-		echo '	<button id="windowButton">發問</button>';
+		echo '	<button id="windowButton" class="question_create_button">發問</button>';
 		}
 		?>
 	</div>
