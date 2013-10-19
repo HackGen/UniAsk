@@ -40,7 +40,7 @@ echo $email."\n";
 		var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element
   		toolbar:      "wysihtml5-toolbar", // id of toolbar element
   		parserRules:  wysihtml5ParserRules, // defined in parser rules set 
-		stylesheets: ["css/reset.css", "css/editor.css"]
+		stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "css/editor.css"]
 		});
 	</script>
 
