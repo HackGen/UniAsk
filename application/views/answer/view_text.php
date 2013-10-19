@@ -25,19 +25,6 @@
 <?php echo form_open('question/insert/'.$ques_id) ?>
 <form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea>
 <input type="submit" name="submit" value="回答" />
-<a href="#myModal" role="button" class="btn" data-toggle="modal"></a>
-<div id="myModal" class="modal hide fade" tableindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal"aria-hidden="true">x</button>
-		      <h3 id="myModalLabel">是否送出？</h3>
-	</div>
-	<div class="modal-body">
-		
-	</div>
-	<div class="modal-footer">
-		 <button class="btn" data-diamiss="modal" aria-hidden="true">確定</button>
-	</div>
-</div>
 
 </form>
 	<script>
