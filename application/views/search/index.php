@@ -5,7 +5,7 @@
 
 #div {
 	text-align: center;
-	width: 100%;
+	width: auto;
 	margin: 0 auto;
 	
 }

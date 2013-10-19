@@ -81,7 +81,7 @@
 	#search_div {
 		height: 400px; 
 		width: 100%;
-		background: url("http://www.wadecantley.com//styles/Wade/images/grey-website-background.jpg") no-repeat center center fixed #fff;
+		background: url("http://www.wadecantley.com//styles/Wade/images/grey-website-background.jpg") no-repeat fixed #fff;
 		margin-bottom: 50px;
 	}
 	
@@ -109,7 +109,7 @@
 		color: #333;
 		font-size: 16px;
 		width: 400px;
-		padding: 7px 15px 7px 35px;
+		padding: 6px 15px 8px 35px;
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
@@ -123,4 +123,14 @@
 		color: #333;
 		outline: none;
 		border-color: #aaa;
+	}
+	
+	a {
+		text-decoration: none;
+		color: #333;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+		color: #333;
 	}
