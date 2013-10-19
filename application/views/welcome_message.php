@@ -15,18 +15,16 @@
 				height: 300,
 				width: 750,
 				theme: 'base',
-				autoopen: false,
+				autoOpen: false,
 				draggable: false,
 				resizable: false,
 				isModal: true,
 				modalOpacity: 0.3
 			});
-			/*
 			$("#windowButton").jqxButton({theme: 'base', width: 100});
 			$("#windowButton").click(function() {
 				$("#jqxwindow").jqxWindow("open");
-		})
-			 */
+			})
 		}); 
 	</script>
 
