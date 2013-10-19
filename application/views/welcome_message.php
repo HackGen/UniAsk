@@ -19,6 +19,7 @@
 				draggable: false,
 				resizable: false,
 				isModal: true,
+				zIndex: 99,
 				modalOpacity: 0.3
 			});
 			$("#windowButton").jqxButton({theme: 'base', width: 100});
