@@ -47,7 +47,7 @@
 			<div class="view_post">
 				<span class="tag"><?php echo $questions['catalog_school'] ?></span>
 				<span class="tag"><?php echo $questions['catalog_detail'] ?></span>
-				<?php echo $questions['content'] ?><br/>
+				<a href = 'http://114.35.129.223/UniAsk/question/view/<?php echo $questions['question_id'] ; ?>' ><?php echo $questions['content'] ?></a><br/>
 				by <strong><?php echo $user['name'];?></strong><span class="date"><?php echo date("M d Y",$questions['date']);?></span>
 			</div>
 		</div>
