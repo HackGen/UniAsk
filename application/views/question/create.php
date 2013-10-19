@@ -67,14 +67,7 @@
 
 </style>
 <!--<link href="http://114.35.129.223/UniAsk/assets/selectbox/css/jquery.selectbox.css" type="text/css" rel="stylesheet" />-->
-<link href="<?php echo base_url(); ?>/assets/jqwidgets/styles/jqx.base.css" type="text/css" rel="stylesheet" />
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxcore.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxbuttons.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxscrollbar.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxlistbox.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>/assets/jqwidgets/jqxdropdownlist.js"></script>
-
+<link href="http://114.35.129.223/UniAsk/assets/jqwidgets/styles/jqx.base.css" type="text/css" rel="stylesheet" />
 
 <?php echo validation_errors(); ?>
 <div id="div">
