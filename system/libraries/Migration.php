@@ -220,11 +220,7 @@ class CI_Migration {
 	{
 		if ( ! $migrations = $this->find_migrations())
 		{
-<<<<<<< HEAD
-			$this->_error_string = $this->line->lang('migration_none_found');
-=======
 			$this->_error_string = $this->lang->line('migration_none_found');
->>>>>>> d1a856c6ad8281e9fd3658d43fc21763589244ec
 			return false;
 		}
 
