@@ -46,6 +46,7 @@
 <div id="div">
 	<?php foreach ($question as $questions): 
 		$user = $this->question_model->get_user($questions['user_id']);
+		$count_answer = $this->search_model->get_count_answer($questions['question_id']);
 	?>
 	
 		<div id="view_div">
