@@ -22,6 +22,7 @@ class Answer extends CI_Controller
 				$data['user_id'] = $questions->user_id."\n";
 				$data['date'] = $questions->date."\n";
 				$data['content'] = $questions->content."\n";
+				$data['question_id'] = $ques_id;
 				$user_id = $questions->user_id;			
 			}
 		}
@@ -42,13 +43,13 @@ class Answer extends CI_Controller
         	$data['title'] = "發問";	
 		$this->load->view('templates/header', $data);
 		$this->load->view('answer/view',$data);
-		$this->load->view('templates/footer');
-		$this->form_validation->set_rules('text', 'text', 'required');
+		
+		$this->form_validation->set_rules('text', 'area', 'required');
 		if ($this->form_validation->run() === TRUE)
 		{	
 			echo $this->input->post('area');
 		}
-		
+		$this->load->view('templates/footer');
 	}
 	
 }
