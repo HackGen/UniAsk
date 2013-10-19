@@ -48,8 +48,8 @@
 	
 		<div id="view_div">
 			<div class="view_post">
-				<span class="tag"><?php echo $questions[catalog_school] ?></span>
-				<span class="tag"><?php echo $questions[catalog_school] ?></span>
+				<span class="tag"><?php echo $questions['catalog_school'] ?></span>
+				<span class="tag"><?php echo $questions['catalog_detail'] ?></span>
 				<?php echo $questions['content'] ?><br/>
 				by <strong><?php echo $user['name'];?></strong><br/><span class="date"><?php echo date("M d Y",$questions['date']);?></span>
 			</div>
