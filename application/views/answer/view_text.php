@@ -6,10 +6,6 @@
   <a data-wysihtml5-command="italic">italic</a>
   <a data-wysihtml5-command="insertOrderedList">insert ordered list</a>
   <a data-wysihtml5-command="insertUnorderedList">insert unordered list</a>
-  <!-- Some wysihtml5 commands require extra parameters -->
-  <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>
-  <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>
-  <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue">blue</a>
   
   <!-- Some wysihtml5 commands like 'createLink' require extra paramaters specified by the user (eg. href) -->
   <a data-wysihtml5-command="createLink">insert link</a>
@@ -24,7 +20,7 @@
 </div>
 <?php echo validation_errors(); ?>
 <?php echo form_open('question/insert/'.$ques_id) ?>
-<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea>
+<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus height = 60% height = 40px></textarea>
 <input type="submit" name="submit" value="回答" />
 
 </form>
