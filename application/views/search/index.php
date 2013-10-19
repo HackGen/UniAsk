@@ -1,6 +1,6 @@
 ﻿<style>
 #form_div {
-
+	display: inline-block;
 }
 
 #div {

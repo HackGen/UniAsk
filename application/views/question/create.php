@@ -1,9 +1,6 @@
 <style>
 #form_div {
-	display: inline-block;
-	text-align: left;
-	padding: 20px;
-	
+	display: inline-block;	
 }
 
 #div {
