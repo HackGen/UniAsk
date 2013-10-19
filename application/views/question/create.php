@@ -75,6 +75,8 @@
 			<img src="<?php echo $this->session->userdata('img'); ?>"  />
 		</div>
 		<div class="question_post">
+			<textarea name="text"></textarea><br />
+			<div class="question_tag">
 				<select name="catalog_school">
 <?php
 $query = $this->db->query('SELECT school_name FROM catalog_school');
@@ -90,9 +92,7 @@ foreach($query->result_array() as $row) {
 	echo '<option name="' . $row['detail_name'] . '">' . $row['detail_name'] . '</option>';
 }
 ?>
-				</select><br/>
-			<textarea name="text"></textarea><br />
-			<div class="question_tag">
+				</select>
 				<input type="submit" name="submit" value="發問" />
 			</div>
 		</div>
