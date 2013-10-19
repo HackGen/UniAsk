@@ -8,6 +8,22 @@
 	<link rel="stylesheet" type="text/css" href="assets/text.css" />
 	<link rel="stylesheet" type="text/css" href="assets/960.css" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<style>
+		.container_header {
+			color: #0bb492;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		#hot_question_field {
+			width: 500px;
+			float: left;	
+		}
+		#latest_question_field {
+			width: 500px;
+			float: left;	
+		}
+	</style>
 </head>
 <body>
 
@@ -36,7 +52,7 @@
 
 	<?php
 		if($logged_in==TRUE) {
-			echo "<div id='question_create_button'>發問</div>";
+			echo "<div class='container_header'>發問</div>";
 			echo "<div id='question_create_div'>";
 			
 			$this->load->view('question/create');
@@ -44,14 +60,14 @@
 		}
 ?>
 		<div id="hot_question_field">
-			<div id='question_create_button' style='margin:20px;'>熱門問題</div>
+			<div class='container_header' style='margin:20px;'>熱門問題</div>
 			<?php
 				$data['question'] = $this->question_model->get_hot_question();
 				$this->load->view('question/hot', $data);
 			?>
 		</div>
 		<div id="latest_question_field">
-			<div id='question_create_button' style='margin:20px;'>最新問題</div>
+			<div class='container_header' style='margin:20px;'>最新問題</div>
 			<?php
 				$data['question'] = $this->question_model->get_question();
 				$this->load->view('question/hot', $data);
