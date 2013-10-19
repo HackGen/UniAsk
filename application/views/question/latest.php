@@ -35,7 +35,7 @@
 .view_post .tag2 {
 	background: #d9e7fe;
 	padding: 2px 5px;
-
+}
 
 </style>
 
