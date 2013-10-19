@@ -10,7 +10,16 @@
 	<script type="text/javascript" src="assets/jqwidgets/jqxwindow.js"></script>
 	<script>
 		$(document).ready(function() {
-			$("#jqxwindow").jqxWindow({height: 300, width: 680, theme: 'base'});
+			$("#jqxwindow").jqxWindow({
+				height: 300,
+				width: 750,
+				theme: 'base',
+				autoopen: false,
+				draggable: false,
+				resizable: false,
+				isModal: true,
+				modalOpacity: 0.3
+			});
 		}); 
 	</script>
 
@@ -62,18 +71,9 @@
 	<div id="search_div">
 		<?php $this->load->view('search/index'); ?>
 	</div>
+	<button onClick="$('$jqxwindow').jqxWindow('open')">
 	
 	
-	<?php
-		if($logged_in==TRUE) {
-			echo "<div id='question_create_button'>發問</div>";
-			echo "<div id='question_create_div'>";
-			
-			$this->load->view('question/create');
-			echo "</div>";
-		}
-	?>
-
 	<div id="div">
 		<div id="form_div">
 			<div id="hot_question_field">
