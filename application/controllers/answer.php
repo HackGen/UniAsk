@@ -22,6 +22,7 @@ class Answer extends CI_Controller
 				$data['user_id'] = $questions->user_id."\n";
 				$data['date'] = $questions->date."\n";
 				$data['content'] = $questions->content."\n";
+				$data['question_id'] = $ques_id;
 				$user_id = $questions->user_id;			
 			}
 		}
