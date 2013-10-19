@@ -32,7 +32,7 @@
 		var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element
   		toolbar:      "wysihtml5-toolbar", // id of toolbar element
   		parserRules:  wysihtml5ParserRules, // defined in parser rules set 
-		stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "<?php echo base_url(); ?>/assets/wysihtml5/website/css/stylesheet.css"]
+		stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "css/stylesheet.css"]
 		});
 		
 		editor.on("load", function() {
