@@ -5,6 +5,31 @@
 	<title>UniAsk :: 由你問大學</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css" media="screen" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxwindow.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxpanel.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxtabs.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxcheckbox.js"></script>
+<script>
+function createWindow() {
+	$("#window").jqxWindow({
+		height: 300,
+		width: 600,
+		resizable: false,
+		isModal: trye,
+		autoOpen: false,
+		modalOpacity: 0.3
+	});
+}
+$(document).ready(function() {
+	windowButton.click(function(event) {
+		$("#window").jqxWindow("open");
+	});
+});
+	</script>
+
 	<style>
 		.container_header {
 			color: #0bb492;
