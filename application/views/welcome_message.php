@@ -4,6 +4,9 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf8" />
 	<title>UniAsk :: 由你問大學</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="assets/reset.css" />
+	<link rel="stylesheet" type="text/css" href="assets/text.css" />
+	<link rel="stylesheet" type="text/css" href="assets/960.css" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
@@ -26,10 +29,11 @@
 	</div>
 </header>
 
-<div id="container">
+<div class="container_12">
 	<div id="search_div"></div>
-	
-	
+	<div class="clear"></div>
+
+	<div class="grid_6">
 	<?php
 		if($logged_in==TRUE) {
 			echo "<div id='question_create_button'>發問</div>";
@@ -43,6 +47,10 @@
 		$this->load->view('question/all', $data);
 
 	?>
+	</div>
+	<div class="grid_6">
+	</div>
+	<div class="clear"></div>
 </div>
 
 <footer>
