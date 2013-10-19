@@ -22,7 +22,7 @@
 </div>
 <?php echo validation_errors(); ?>
 <?php echo form_open('question/insert/'.$ques_id) ?>
-<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus height = 60% height = 40px></textarea>
+<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus rows="5" cols=50%></textarea>
 <input type="submit" name="submit" value="回答" />
 
 </form>
