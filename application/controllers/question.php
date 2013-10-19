@@ -77,7 +77,7 @@ class Question extends CI_Controller {
 	}
 
 
-	public function insert()
+	public function insert($question_id)
 	{
 
 		$this->form_validation->set_rules('area', 'text', 'required');
