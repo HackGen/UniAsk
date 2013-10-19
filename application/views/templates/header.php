@@ -12,6 +12,21 @@
 	
 	<header>
 	<div class="header_logo"><a href="<?php echo base_url(); ?>">UNIASK</a></div>
+	
+	<!--Search Part-->
+	<div id="search"><input type="text" id="search_text" placeholder="Search..." value="<?php echo urldecode($title); ?>" /></div>
+	<script type="text/javascript">
+	$( document ).ready(function() {
+		$('#search_text').keypress(function (e) {
+		  if (e.which == 13) {
+			if($(this).val() && $(this).val()!=" ") {
+				window.location = '<?php echo base_url(); ?>search/get/'+$(this).val();
+			}
+		  }
+		});
+	});
+	</script>
+	
 	<div class="header_login">
 		<?php
 			if($logged_in==TRUE) {
