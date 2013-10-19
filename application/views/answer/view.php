@@ -1,3 +1,4 @@
+<p>
 <div id="div">
 	<div id="view_div2">
 		<div class="view_pic">
@@ -10,3 +11,4 @@
 		</div>
 	</div>
 </div>
+</p>
