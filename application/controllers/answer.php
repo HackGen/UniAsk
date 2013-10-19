@@ -49,7 +49,6 @@ class Answer extends CI_Controller
 		{	
 			echo $this->input->post('area');
 		}
-s
 		$this->load->view('templates/footer');
 	}
 	
