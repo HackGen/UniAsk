@@ -25,7 +25,7 @@ class Search extends CI_Controller {
 			{
 				show_404();
 			} else {
-				$data['title'] = $search_keyword);
+				$data['title'] = $search_keyword;
 				//$data['user'] = $this->question_model->get_user($data['question']['user_id']);
 			
 				$this->load->view('templates/header', $data);
