@@ -29,11 +29,9 @@
 	</div>
 </header>
 
-<div class="container_12">
+<div id="container">
 	<div id="search_div"></div>
-	<div class="clear"></div>
 
-	<div class="grid_6">
 	<?php
 		if($logged_in==TRUE) {
 			echo "<div id='question_create_button'>發問</div>";
@@ -47,10 +45,6 @@
 		$this->load->view('question/all', $data);
 
 	?>
-	</div>
-	<div class="grid_6">
-	</div>
-	<div class="clear"></div>
 </div>
 
 <footer>
