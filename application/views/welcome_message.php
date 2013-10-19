@@ -21,6 +21,9 @@
 				modalOpacity: 0.3
 			});
 		}); 
+		function openWindow() {
+			$("#jqxwindow").jqxWindow("open");
+		}
 	</script>
 
 	<style>
@@ -71,7 +74,7 @@
 	<div id="search_div">
 		<?php $this->load->view('search/index'); ?>
 	</div>
-	<button onClick="$('$jqxwindow').jqxWindow('open')">發問</button>
+	<button onClick="openWindow()">發問</button>
 	
 	
 	<div id="div">
