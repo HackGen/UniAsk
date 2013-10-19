@@ -71,7 +71,7 @@
 	<div id="search_div">
 		<?php $this->load->view('search/index'); ?>
 	</div>
-	<button onClick="$('$jqxwindow').jqxWindow('open')">
+	<button onClick="$('$jqxwindow').jqxWindow('open')">發問</button>
 	
 	
 	<div id="div">
