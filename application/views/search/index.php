@@ -66,6 +66,7 @@
 		<br/><br/>
 		例子: 交通大學 假單 | 如何繳費? | 獎學金
 		<br/><br/>
+		OR<br/><br/>
 		<?php if($logged_in == TRUE) {
 		echo '	<button id="windowButton" class="question_create_button">發問</button>';
 		}
