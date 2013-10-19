@@ -109,7 +109,7 @@
 		<?php $this->load->view('search/index'); ?>
 	</div>
 <?php if($logged_in == TRUE) {
-echo '	<button id="windowButton">發問</button>'
+echo '	<button id="windowButton">發問</button>';
 }
 ?>
 	
