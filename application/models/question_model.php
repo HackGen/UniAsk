@@ -18,6 +18,13 @@ class Question_model extends CI_Model {
 		$query = $this->db->get_where('questions', array('question_id' => $question_id));
 		return $query->row_array();
 	}
+
+	public function get_hot_question)
+	{
+		$this->db->order_by("rating", "desc");
+		$query = $this->db->get('questions');
+		return $query->result_array();
+	}
 	
 	
 	public function get_user($user_id = FALSE)
