@@ -79,7 +79,7 @@
 		<div class="question_post">
 			<textarea name="text"></textarea><br />
 			<div class="question_tag">
-				<select name="catalog_school" id="catalog_school">
+				<select name="catalog_school" id="catalog_school" tabindex="1">
 					<?php
 					$query = $this->db->query('SELECT school_name FROM catalog_school');
 					foreach($query->result_array() as $row) {
@@ -87,7 +87,7 @@
 					}
 					?>
 				</select>
-				<select name="catalog_detail" id="catalog_detail">
+				<select name="catalog_detail" id="catalog_detail" tabindex="1">
 					<?php
 					$query = $this->db->query('SELECT detail_name FROM catalog_detail');
 					foreach($query->result_array() as $row) {
