@@ -78,10 +78,14 @@
 			<textarea name="text"></textarea><br />
 			<div class="question_tag">
 <?php
-$query = $this->db->get('catalog_school');
-echo $query->result_array();
-$query = $this->db->get('catalog_detail');
-echo $query->result_array();
+$query = $this->db->query('SELECT school_name FROM catalog_school');
+foreach($query->result_array() as $row) {
+	echo $row['school_name'];
+}
+$query = $this->db->query('SELECT detail_name FROM catalog_detail');
+foreach($query->result_array() as $row) {
+	echo $row['detail_name'];
+}
 ?>
 				<select name="catalog_school">
 				</select>
