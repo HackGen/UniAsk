@@ -16,11 +16,8 @@
 		}
 
 		#hot_question_field {
-			width: 500px;
 		}
 		#latest_question_field {
-			width: 500px;
-			float: left;	
 		}
 	</style>
 </head>
@@ -48,7 +45,8 @@
 	<div id="search_div">
 		<?php $this->load->view('search/index'); ?>
 	</div>
-
+	<div class="container_12">
+	<div class="grid_12">
 	<?php
 		if($logged_in==TRUE) {
 			echo "<div class='container_header'>發問</div>";
@@ -58,6 +56,9 @@
 			echo "</div>";
 		}
 ?>
+	</div>
+	<div class="clear"></div>
+	<div class="grid_6">
 		<div id="hot_question_field">
 			<div class='container_header' style='margin:20px;'>熱門問題</div>
 			<?php
@@ -65,6 +66,8 @@
 				$this->load->view('question/hot', $data);
 			?>
 		</div>
+	</div>
+	<div class="grid_6">
 		<div id="latest_question_field">
 			<div class='container_header' style='margin:20px;'>最新問題</div>
 			<?php
@@ -72,6 +75,8 @@
 				$this->load->view('question/hot', $data);
 			?>
 		</div>
+	</div>
+</div>
 </div>
 
 <footer>
