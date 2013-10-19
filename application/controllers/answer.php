@@ -44,7 +44,7 @@ class Answer extends CI_Controller
 		$this->load->view('templates/header', $data);
 		$this->load->view('answer/view',$data);
 		
-		$this->form_validation->set_rules('text', 'area', 'required');
+		$this->form_validation->set_rules('area', 'text', 'required');
 		if ($this->form_validation->run() === TRUE)
 		{	
 			echo $this->input->post('area');
