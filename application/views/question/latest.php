@@ -16,6 +16,7 @@
 	text-align: center;
 	width: auto;
 	margin: 0 auto;
+	float: left;
 	
 }
 

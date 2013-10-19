@@ -17,6 +17,7 @@
 	text-align: center;
 	width: auto;
 	margin: 0 auto;
+	float: left;
 	
 }
 
@@ -48,7 +49,7 @@
 		foreach ($hot as $questions): 
 		if($i >= 5) break;
 		$i++;
-		$user = $this->question_model->get_user($hot['user_id']);
+		$user = $this->question_model->get_user($questions['user_id']);
 	?>
 	
 		<div id="view_div">
