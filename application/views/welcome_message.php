@@ -14,6 +14,34 @@
 	<script type="text/javascript" src="assets/jqwidgets/jqxdropdownlist.js"></script>
 	<script>
 		$(document).ready(function() {
+			var school_source = [
+				<?php
+					$query = $this->db->query('SELECT school_name FROM catalog_school');
+					foreach($query->result_array() as $row) {
+						echo '"' . $row['school_name'] . '",';
+					}
+				?>
+				];
+			var detail_source = [
+				<?php
+					$query = $this->db->query('SELECT detail_name FROM catalog_detail');
+					foreach($query->result_array() as $row) {
+						echo '"' . $row['detail_name'] . '",';
+					}
+				?>
+				];
+			$("#schoollist").jqxDropDownList({
+				source: school_source,
+				selectedIndex: 0,
+				width: 100,
+				height: 25
+			});
+			$("#detaillist").jqxDropDownList({
+				source: detail_source,
+				selectedIndex: 0,
+				width: 100,
+				height: 25
+			});
 			$("#jqxwindow").jqxWindow({
 				height: 300,
 				width: 750,
