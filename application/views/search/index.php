@@ -23,7 +23,7 @@
 
 #search input[type="text"] {
     background: url("http://www.cjies.com/etop/images/search-white.png") no-repeat 12px 15px #fff;
-    border: 3px solid #aaa;
+    border: 2px solid #bbb;
     color: #333;
 	font-size: 20px;
 	text-align: left;

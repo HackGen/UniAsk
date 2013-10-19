@@ -34,11 +34,6 @@
 	padding: 5px 10px;
 }
 
-.view_post .date {
-	position :absolute;
-	bottom: 15px;
-	right: 20px;
-}
 
 </style>
 

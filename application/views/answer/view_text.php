@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<center>
 <br>
 <div id="wysihtml5-toolbar">
   <a data-wysihtml5-command="bold">bold</a>
@@ -22,9 +22,11 @@
 </div>
 <?php echo validation_errors(); ?>
 <?php echo form_open('question/insert/'.$ques_id) ?>
-<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus rows="7" cols="100"></textarea>
-<input type="submit" name="submit" value="回答" />
 
+<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus rows="7" cols="80"></textarea>
+<br>
+<input type="submit" name="submit" value="回答" />
+</center>
 </form>
 	<script>
 		var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element

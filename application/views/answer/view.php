@@ -1,8 +1,4 @@
 
-<ul>
-	<li>1</li>
-	<li>2</li>
-</ul>
 	<div id="div">
 	<div id="view_div">
 		<div class="view_pic">
@@ -11,9 +7,8 @@
 		<div class="view_post">
 			<strong><?php echo $name;?> 回答:</strong><br/>
 			<?php echo $content; ?>
-			<span class="date"><?php echo date("M d Y",$date);?></span>
+			<span><?php echo date("M d Y",$date);?></span>
 		</div>
 	</div>
 </div>
-<?php echo $content; ?>
 
