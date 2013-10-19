@@ -31,15 +31,18 @@
 .view_post .tag1 {
 	background: #9cb0d8;
 	padding: 2px 5px;
+	font-size: 10px;
 }
 
 .view_post .tag2 {
 	background: #d9e7fe;
 	padding: 2px 5px;
+	font-size: 10px;
 }
 
 .view_post_link {
 	font-size: 15px;
+	padding-top: 2px;
 	line-height: 18px;
 	font-weight: bold;
 }
