@@ -66,9 +66,9 @@
 }
 
 .tag_button {
-	height: 10px;
+	height: 30px;
 	width: 500px;
-	color: #aaa;
+	background: #aaa;
 }
 
 </style>
