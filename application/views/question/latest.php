@@ -1,7 +1,7 @@
 <style>
 #view_div {
 	margin: 5px;
-	width: 240px;
+	width: 390px;
 	display: inline-block;
 	text-align: left;
 	padding: 20px;
