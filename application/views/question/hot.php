@@ -13,14 +13,6 @@
 	position: relative;
 }
 
-#div {
-	text-align: center;
-	width: auto;
-	margin: 0 auto;
-	float: left;
-	
-}
-
 .view_pic, .view_post {
 	float: left;
 	margin: 5px;
@@ -43,7 +35,7 @@
 
 </style>
 
-<div id="div">
+<div>
 	<?php 
 		$i = 0;
 		foreach ($question as $questions): 
