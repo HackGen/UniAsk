@@ -56,9 +56,8 @@ class Answer extends CI_Controller
 			'rating_minus' => 0,
 			'correct' => 0,
 			'date' => now(),
+			);
 			$this->db->insert('answer',$data1);
-		);
-
 			echo $this->input->post('area');
 			
 		}
