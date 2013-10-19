@@ -77,13 +77,21 @@
 		<div class="question_post">
 			<textarea name="text"></textarea><br />
 			<div class="question_tag">
-<?php
-$query = $this->db->get('catalog_school');
-echo $query->result_array();
-$query = $this->db->get('catalog_detail');
-echo $query->result_array();
-?>
 				<select name="catalog_school">
+<?php
+$query = $this->db->query('SELECT school_name FROM catalog_school');
+foreach($query->result_array() as $row) {
+	echo '<option name="' . $row['school_name'] . '">' . $row['school_name'] . '</option>';
+}
+?>
+				</select>
+				<select name="catalog_detail">
+<?php
+$query = $this->db->query('SELECT detail_name FROM catalog_detail');
+foreach($query->result_array() as $row) {
+	echo '<option name="' . $row['detail_name'] . '">' . $row['detail_name'] . '</option>';
+}
+?>
 				</select>
 				<input type="submit" name="submit" value="發問" />
 			</div>
