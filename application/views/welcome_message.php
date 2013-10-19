@@ -40,11 +40,31 @@
 			$this->load->view('question/create');
 			echo "</div>";
 		}
-		echo "<div id='question_create_button' style='margin:20px;'>最新問題</div>";
-		$data['question'] = $this->question_model->get_question();
-		$this->load->view('question/all', $data);
-
+		//echo "<div id='question_create_button' style='margin:20px;'>最新問題</div>";
+		//$data['question'] = $this->question_model->get_question();
+		//$this->load->view('question/all', $data);
 	?>
+
+	
+	<div id="hot_question_field">
+		<div class='question_create_button' style='margin:20px;'>熱門問題</div>
+		<?php
+			$data['question'] = $this->question_model->get_hot_question();
+			$this->load->view('question/hot', $data);
+		?>
+	</div>
+
+
+	<div id="latest_question_field">
+		<div class='question_create_button' style='margin:20px;'>最新問題</div>
+		<?php
+			$data['question'] = $this->question_model->get_question();
+			$this->load->view('question/hot', $data);
+		?>
+	</div>
+	
+	
+	
 </div>
 
 <footer>
