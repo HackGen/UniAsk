@@ -6,20 +6,22 @@ class Search_model extends CI_Model {
 		$this->load->database();
 	}
 	
-	/*
+	
 	public function get_search($search_keyword = FALSE)
 	{
 		$search_keywords = explode(' ', trim($search_keyword));
 		
 		foreach($search_keywords as $search_keyword) {
-			$this->db->or_like("", $search_keyword);
-			$this->db->or_like("content", $search_keyword);
+			$this->db->like("catalog_school", $search_keyword);
+			$this->db->like("catalog_detail", $search_keyword);
+			$this->db->like("content", $search_keyword);
 		}
 		$query = $this->db->get("questions");
 		return $query->result_array();
 	}
-	*/
 	
+	
+	/*
 	public function get_search($search_keyword = FALSE)
 	{
 		//$search_keywords = explode(' ', trim($search_keyword));
@@ -28,19 +30,19 @@ class Search_model extends CI_Model {
 
 		switch($parts){
 			case 0:
-			$this->db->or_like('catalog_school', $search_keyword);
-			$this->db->or_like('catalog_school', $search_keyword);
-			$this->db->or_like('content', $search_keyword);
-			break;
-		case 1;
-			$this->db->or_like('CONCAT(catalog_school, " ", content)', $search_keyword);
-			$this->db->or_like('CONCAT(catalog_detail, " ", content)', $search_keyword);
-			$this->db->or_like('CONCAT(catalog_school, " ", catalog_detail)', $search_keyword);
-			break;
-		case 2:
-		default:
-			$this->db->or_like('CONCAT(catalog_school, " ", catalog_detail, " ", content)', $search_keyword);
-			break;
+				$this->db->or_like('catalog_school', $search_keyword);
+				$this->db->or_like('catalog_school', $search_keyword);
+				$this->db->or_like('content', $search_keyword);
+				break;
+			case 1;
+				$this->db->or_like('CONCAT(catalog_school, " ", content)', $search_keyword);
+				$this->db->or_like('CONCAT(catalog_detail, " ", content)', $search_keyword);
+				$this->db->or_like('CONCAT(catalog_school, " ", catalog_detail)', $search_keyword);
+				break;
+			case 2:
+			default:
+				$this->db->or_like('CONCAT(catalog_school, " ", catalog_detail, " ", content)', $search_keyword);
+				break;
 
 		}	
 
@@ -48,6 +50,7 @@ class Search_model extends CI_Model {
 		return $query->result_array();
 		
 	}
+	*/
 	
 	
 	
