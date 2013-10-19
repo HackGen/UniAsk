@@ -21,6 +21,7 @@ class Search extends CI_Controller {
 			$data['logged_in'] = $this->session->userdata('user_id');
 			$data['question'] = $this->search_model->get_search($search_keyword);
 			$data['count_answer'] = $this->search_model->get_count_answer($data['question']['question_id']);
+			print_r($data['question']);		
 
 			if (empty($data['question']))
 			{
