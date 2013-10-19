@@ -43,6 +43,7 @@
 		echo "<div id='question_create_button' style='margin:20px;'>最新問題</div>";
 		$data['question'] = $this->question_model->get_question();
 		$data['hot'] = $this->question_model->get_hot_question();
+		echo $data['hot'];
 		//$this->load->view('question/all', $data);
 		$this->load->view('question/hot', $data);
 		$this->load->view('question/latest', $data);
