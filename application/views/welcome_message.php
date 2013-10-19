@@ -41,11 +41,15 @@
 	</div>
 </header>
 
-<div id="container">
+<div class="container_12">
+	<div class="grid_2"></div>
+	<div class="grid_8">
 	<div id="search_div">
 		<?php $this->load->view('search/index'); ?>
 	</div>
-	<div class="container_12">
+	</div>
+	<div class="grid_2"></div>
+	<div class="clear">
 	<div class="grid_12">
 	<?php
 		if($logged_in==TRUE) {
@@ -76,7 +80,6 @@
 			?>
 		</div>
 	</div>
-</div>
 </div>
 
 <footer>
