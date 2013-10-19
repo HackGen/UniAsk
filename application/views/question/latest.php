@@ -28,13 +28,16 @@
 }
 
 .view_post .tag1 {
-	background: #9cb0d8;
+	color: #fff;
+	background: #23609b;
 	padding: 2px 5px;
 }
 
 .view_post .tag2 {
-	background: #d9e7fe;
+	color: #fff;
+	background: #3f86ca;
 	padding: 2px 5px;
+}
 
 
 </style>
