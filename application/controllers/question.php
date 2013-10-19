@@ -69,7 +69,8 @@ class Question extends CI_Controller {
 		$this->load->view('templates/header', $data);
 		$this->load->view('question/view', $data);
 		
-		
+		//$this->load->view('answer/view',$data);
+		$this->get_answer($question_id);
 		$this->load->view('answer/view_text',$data);
 		
 		//$this->load->view('answer/view',$data);
@@ -86,6 +87,7 @@ class Question extends CI_Controller {
 			$data1 = array(
 			'question_id' => $question_id,
 			'user_id' => $this->session->userdata('user_id'),
+			'name' => $this->session->userdata('name'),
 			'type' => 1,
 			'content' => $this->input->post('area'),
 			'rating_plus' => 0,
@@ -94,8 +96,27 @@ class Question extends CI_Controller {
 			'date' => now(),
 			);
 			$this->db->insert('answer',$data1);
-			echo $this->input->post('area');
+			//$this->load->view('answer/finish',$data1);
+			//echo $this->input->post('area');
+			
 		}
+	}
+	public function get_answer($question_id){
+		$query = $this->db->query("SELECT * FROM `answer` WHERE `question_id`='".$question_id."'");
+		foreach($query->result() as $ans){
+			$ans_data['answer_id'] = $ans->answer_id;
+			$ans_data['question_id'] = $ans->question_id;
+			$ans_data['user_id'] = $ans->user_id;
+			$ans_data['name'] = $ans->name;
+			$ans_data['type'] = $ans->type;
+			$ans_data['content'] = $ans->content;
+			$ans_data['rating_plus'] = $ans->rating_plus;
+			$ans_data['rating_minus'] = $ans->rating_minus;
+			$ans_data['correct'] = $ans->correct;	
+			$ans_data['date'] = $ans->date;
+			$this->load->view('answer/view',$ans_data);		
+		}
+			
 	}
 
 	public function all()

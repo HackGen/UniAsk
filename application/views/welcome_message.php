@@ -5,6 +5,7 @@
 	<title>UniAsk :: 由你問大學</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css" media="screen" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<<<<<<< HEAD
 	<script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
 	<script type="text/javascript" src="../../jqwidgets/jqxwindow.js"></script>
 	<script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
@@ -42,6 +43,8 @@ $(document).ready(function() {
 		#latest_question_field {
 		}
 	</style>
+=======
+>>>>>>> 773f2a68618c671cbb2e4b4fb567d2286ae21666
 </head>
 <body>
 
@@ -63,40 +66,47 @@ $(document).ready(function() {
 	</div>
 </header>
 
-<div id="search_div">
-	<?php $this->load->view('search/index'); ?>
-</div>
-<div class="container_12">
-	<div class="grid_12">
-		<?php
-			if($logged_in==TRUE) {
-				echo "<div class='container_header'>發問</div>";
-				echo "<div id='question_create_div'>";
-				
-				$this->load->view('question/create');
-				echo "</div>";
-			}
+<div id="container">
+	<div id="search_div">
+		<?php $this->load->view('search/index'); ?>
+	</div>
+	
+	
+	<?php
+		if($logged_in==TRUE) {
+			echo "<div id='question_create_button'>發問</div>";
+			echo "<div id='question_create_div'>";
+			
+			$this->load->view('question/create');
+			echo "</div>";
+		}
+		//echo "<div id='question_create_button' style='margin:20px;'>最新問題</div>";
+		//$data['question'] = $this->question_model->get_question();
+		//$this->load->view('question/all', $data);
 	?>
-	</div>
-	<div class="clear"></div>
-	<div class="grid_6">
-		<div id="hot_question_field">
-			<div class='container_header' style='margin:20px;'>熱門問題</div>
-			<?php
-				$data['question'] = $this->question_model->get_hot_question();
-				$this->load->view('question/hot', $data);
-			?>
+
+	<div id="div">
+		<div id="form_div">
+			<div id="hot_question_field">
+				<div class='container_title' style='margin:20px;'>熱門問題</div>
+				<?php
+					$data['question'] = $this->question_model->get_hot_question();
+					$this->load->view('question/hot', $data);
+				?>
+			</div>
+
+
+			<div id="latest_question_field">
+				<div class='container_title' style='margin:20px;'>最新問題</div>
+				<?php
+					$data['question'] = $this->question_model->get_question();
+					$this->load->view('question/hot', $data);
+				?>
+			</div>
 		</div>
 	</div>
-	<div class="grid_6">
-		<div id="latest_question_field">
-			<div class='container_header' style='margin:20px;'>最新問題</div>
-			<?php
-				$data['question'] = $this->question_model->get_question();
-				$this->load->view('question/hot', $data);
-			?>
-		</div>
-	</div>
+	
+	
 </div>
 
 <footer>
