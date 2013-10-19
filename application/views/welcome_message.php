@@ -21,11 +21,12 @@
 				isModal: true,
 				modalOpacity: 0.3
 			});
-
+/*
 			$("#windowButton").jqxButton({theme: 'base', width: 100});
 			$("#windowButton").click(function() {
 				$("#jqxwindow").jqxWindow("open");
 			})
+ */
 		}); 
 	</script>
 
@@ -77,8 +78,6 @@
 	<div id="search_div">
 		<?php $this->load->view('search/index'); ?>
 	</div>
-	<button id="windowButton">發問</button>
-	
 	
 	<div id="div">
 		<div id="form_div">
