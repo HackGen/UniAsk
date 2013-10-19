@@ -42,8 +42,7 @@
 
 .view_post_link {
 	font-size: 15px;
-	margin-top: 5px;
-	line-height: 18px;
+	line-height: 25px;
 }
 
 </style>
