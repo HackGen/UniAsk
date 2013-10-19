@@ -1,4 +1,4 @@
-<style>
+﻿<style>
 #form_div {
 
 }
@@ -48,9 +48,9 @@
 
 <div id="div">
 	<div id="search2">
-		<input type="text" id="search_text" placeholder="�j�M�Aı�o�x�Z�����D..." />
+		<input type="text" id="search_text" placeholder="搜尋你覺得困擾的問題..." />
 		<br/><br/>
-		�Ҥl: ��q�j�� ���� | �p��ú�O? | ���Ǫ�
+		例子: 交通大學 假單 | 如何繳費? | 獎學金
 	</div>
 </div>
 
