@@ -21,10 +21,12 @@
 				isModal: true,
 				modalOpacity: 0.3
 			});
+			/*
 			$("#windowButton").jqxButton({theme: 'base', width: 100});
 			$("#windowButton").click(function() {
 				$("#jqxwindow").jqxWindow("open");
-			})
+		})
+			 */
 		}); 
 	</script>
 
