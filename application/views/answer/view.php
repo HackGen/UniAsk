@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 
 
-<?php
-echo $user_id."\n";
-echo $date."\n";
-echo $content."\n";
-echo $fb_id."\n";
-echo $email."\n";
-
-?>
-<div class="view_pic"> 
-<img src="https://graph.facebook.com/<?php echo $fb_id ?>/picture?height=100&width=100" />
-</div>
-
-
 <div id="wysihtml5-toolbar">
   <a data-wysihtml5-command="bold">bold</a>
   <a data-wysihtml5-command="italic">italic</a>
@@ -34,7 +21,7 @@ echo $email."\n";
   </div>
 </div>
 <?php echo validation_errors(); ?>
-<?php echo form_open('answer/view/'.$question_id) ?>
+<?php echo form_open('question/insert/') ?>
 <form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea>
 <input type="submit" name="submit" value="回答" />
 </form>
