@@ -35,8 +35,9 @@
 	height: 50px;
 	width: 500px;
 	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	resize: none;
 }
 .question_post textarea:hover, .question_post textarea:focus {
 	border-color: #0bb492;
@@ -59,6 +60,10 @@
 	background: #0bb492;
 }
 
+.question_tag {
+	border-top: 1px solid #e6e6e6;
+}
+
 </style>
 
 <?php echo validation_errors(); ?>
@@ -70,7 +75,12 @@
 		</div>
 		<div class="question_post">
 			<textarea name="text"></textarea><br />
-			<input type="submit" name="submit" value="發問" />
+			<div class="question_tag">
+				<select name="catalog_school">
+					<option name="成功大學">成功大學</option>
+				</select>
+				<input type="submit" name="submit" value="發問" />
+			</div>
 		</div>
 	</form>
 </div>
