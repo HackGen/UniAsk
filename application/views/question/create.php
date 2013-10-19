@@ -61,10 +61,16 @@
 	background: #0bb492;
 }
 
-.question_tag {
+.question_submit {
 	border-top: 1px solid #e6e6e6;
 }
 
+.question_tag {
+	border-bottom: 1px solid #e6e6e6;
+}
+.question_tag #div {
+	float: left;
+}
 </style>
 <!--<link href="http://114.35.129.223/UniAsk/assets/selectbox/css/jquery.selectbox.css" type="text/css" rel="stylesheet" />-->
 <link href="http://114.35.129.223/UniAsk/assets/jqwidgets/styles/jqx.base.css" type="text/css" rel="stylesheet" />
@@ -104,7 +110,7 @@
 			</select>
 -->
 			<textarea name="text"></textarea><br />
-			<div class="question_tag">
+			<div class="question_submit">
 				<input type="submit" name="submit" value="發問" />
 			</div>
 		</div>
