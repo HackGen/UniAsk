@@ -87,6 +87,7 @@ class Question extends CI_Controller {
 			$data1 = array(
 			'question_id' => $question_id,
 			'user_id' => $this->session->userdata('user_id'),
+			'name' => $this->session->userdata('name'),
 			'type' => 1,
 			'content' => $this->input->post('area'),
 			'rating_plus' => 0,
@@ -104,6 +105,7 @@ class Question extends CI_Controller {
 			$ans_data['answer_id'] = $ans->answer_id;
 			$ans_data['question_id'] = $ans->question_id;
 			$ans_data['user_id'] = $ans->user_id;
+			$ans_data['name'] = $ans->name;
 			$ans_data['type'] = $ans->type;
 			$ans_data['content'] = $ans->content;
 			$ans_data['rating_plus'] = $ans->rating_plus;
