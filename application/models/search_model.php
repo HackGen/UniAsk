@@ -20,8 +20,17 @@ class Search_model extends CI_Model {
 		$query = $this->db->get("questions");
 		return $query->result_array();
 	}
-	
-	
+	 
+	public function get_count_answer($question_id = FALSE) 
+	{
+		$this->db->where('question_id', $question_id);
+		$this->db->from('answer');
+		
+		if($this->db->count_all_results())
+			return $this->db->count_all_results();
+		else
+			return "0";
+	}
 	/*
 	public function get_search($search_keyword = FALSE)
 	{

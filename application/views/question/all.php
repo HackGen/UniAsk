@@ -53,7 +53,7 @@
 				<img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" />
 			</div>
 			<div class="view_post">
-				<strong><?php echo $user['name'];?> 問:</strong><br/>
+				<strong><?php echo $user['name'];?> 問:</strong><?php echo $count_answer;?><br/>
 				<a href = 'http://114.35.129.223/UniAsk/question/view/<?php echo $questions['question_id'] ; ?>' ><?php echo $questions['content']; ?> </a>
 				<!--<?php echo $questions['content']; ?>-->
 				<span class="date"><?php echo date("M d Y",$questions['date']);?></span>
