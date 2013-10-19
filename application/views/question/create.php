@@ -33,6 +33,7 @@
 }
 
 .question_post textarea {
+	border: 0;
 	outline: 0;
 	padding: 4px 2px;
 	height: 50px;
