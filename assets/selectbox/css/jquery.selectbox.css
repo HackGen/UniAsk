@@ -68,7 +68,7 @@
 	position: absolute;
 	top: 30px;
 	width: 200px;
-	z-index: 100;
+	z-index: 9999999;
 	overflow-y: auto;
 }
 .sbOptions li{
