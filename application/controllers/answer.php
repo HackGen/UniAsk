@@ -16,11 +16,23 @@ class Answer extends CI_Controller
 		$query = $this->db->query("SELECT * FROM `questions` WHERE `question_id`='".$ques_id."'");
 		if($query->num_rows() > 0){
 			foreach($query->result() as $questions){
-				echo "<img src=".$this->session->userdata('img')." height='35px' title=".$this->session->userdata('name')." />";
+				echo $questions->user_id;
 				echo $questions->date;
-				echo $questions->content;			
+				echo $questions->content;
+				$user_id = $questions->user_id;			
 			}
 		}
+		$query = $this->db->query("SELECT * FROM `users` WHERE `user_id`='".$user_id."'");
+		if($query->num_rows() > 0){
+			foreach($query->result() as $user){
+				echo $user->fb_id;
+				echo $user->email;
+				$fb_id = $user->fb_id;
+			}
+		}
+		echo '<div class="view_pic"> <img src="https://graph.facebook.com/ '. $fb_id .'.picture?height=100&width=100" /></div>';
+			
+		
 		
 		
 	}
