@@ -81,7 +81,7 @@
 	#search_div {
 		height: 400px; 
 		width: 100%;
-		background: url("http://www.wadecantley.com//styles/Wade/images/grey-website-background.jpg") no-repeat center center fixed #fff;
+		background: url("http://www.wadecantley.com//styles/Wade/images/grey-website-background.jpg") no-repeat fixed #fff;
 		margin-bottom: 50px;
 	}
 	
@@ -127,10 +127,10 @@
 	
 	a {
 		text-decoration: none;
-		color: #3333;
+		color: #333;
 	}
 	
 	a:hover {
 		text-decoration: underline;
-		color: #3333;
+		color: #333;
 	}

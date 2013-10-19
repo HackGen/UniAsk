@@ -41,8 +41,7 @@
 <div id="search_div">
 	<?php $this->load->view('search/index'); ?>
 </div>
-<div class="container_12">
-	<div class="grid_12">
+
 		<?php
 			if($logged_in==TRUE) {
 				echo "<div class='container_header'>發問</div>";
@@ -52,26 +51,26 @@
 				echo "</div>";
 			}
 	?>
-	</div>
+
 	<div class="clear"></div>
-	<div class="grid_6">
-		<div id="hot_question_field">
-			<div class='container_header' style='margin:20px;'>熱門問題</div>
-			<?php
-				$data['question'] = $this->question_model->get_hot_question();
-				$this->load->view('question/hot', $data);
-			?>
-		</div>
+	
+	<div id="hot_question_field">
+		<div class='container_header' style='margin:20px;'>熱門問題</div>
+		<?php
+			$data['question'] = $this->question_model->get_hot_question();
+			$this->load->view('question/hot', $data);
+		?>
 	</div>
-	<div class="grid_6">
-		<div id="latest_question_field">
-			<div class='container_header' style='margin:20px;'>最新問題</div>
-			<?php
-				$data['question'] = $this->question_model->get_question();
-				$this->load->view('question/hot', $data);
-			?>
-		</div>
+
+
+	<div id="latest_question_field">
+		<div class='container_header' style='margin:20px;'>最新問題</div>
+		<?php
+			$data['question'] = $this->question_model->get_question();
+			$this->load->view('question/hot', $data);
+		?>
 	</div>
+
 </div>
 
 <footer>
