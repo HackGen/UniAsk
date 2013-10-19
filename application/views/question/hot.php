@@ -40,7 +40,7 @@
 
 .view_post_link {
 	font-size: 15px;
-	line-height: 18px
+	line-height: 18px;
 	font-weight: bold;
 }
 
