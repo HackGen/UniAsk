@@ -17,25 +17,31 @@ class Search extends CI_Controller {
 	public function get($search_keyword)
 	{
 		if(isset($search_keyword)) {
-			//$data['logged_in'] = $this->session->userdata('user_id');
+			$data['logged_in'] = $this->session->userdata('user_id');
 			$data['question'] = $this->search_model->get_search(urldecode($search_keyword));
 
 			if (empty($data['question']))
 			{
 				show_404();
 			} else {
-				//$data['title'] = $data['question']['content'];
+				$data['title'] = $search_keyword;
 				//$data['user'] = $this->question_model->get_user($data['question']['user_id']);
 			
-				//$this->load->view('templates/header', $data);
+				$this->load->view('templates/header', $data);
 				$this->load->view('question/all', $data);
-				//$this->load->view('templates/footer');
+				$this->load->view('templates/footer');
 			}
-			
-			
-
 		}
 	}	
+	
+	public function index()
+	{
+		$data['logged_in'] = $this->session->userdata('user_id');
+		$data['title'] = "Seach ";
+		$this->load->view('templates/header', $data);
+		$this->load->view('search/index');
+		$this->load->view('templates/footer');
+	}
 	
 
 	
