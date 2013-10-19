@@ -1,7 +1,7 @@
 <style>
 #view_div {
 	margin: 5px;
-	width: 800px;
+	width: 240px;
 	display: inline-block;
 	text-align: left;
 	padding: 20px;
@@ -42,7 +42,11 @@
 </style>
 
 <div id="div">
-	<?php foreach ($question as $questions): 
+	<?php 
+		$i = 0;
+		foreach ($question as $questions): 
+		if($i >= 5) break;
+		$i++;
 		$user = $this->question_model->get_user($questions['user_id']);
 	?>
 	
@@ -51,7 +55,7 @@
 				<span class="tag"><?php echo $questions['catalog_school'] ?></span>
 				<span class="tag"><?php echo $questions['catalog_detail'] ?></span>
 				<?php echo $questions['content'] ?><br/>
-				by <strong><?php echo $user['name'];?></strong><br/><span class="date"><?php echo date("M d Y",$questions['date']);?></span>
+				by <strong><?php echo $user['name'];?></strong><span class="date"><?php echo date("M d Y",$questions['date']);?></span>
 			</div>
 		</div>
 		<div style="clear:both;"></div>
