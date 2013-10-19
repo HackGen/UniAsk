@@ -8,7 +8,7 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="assets/jqwidgets/jqxcore.js"></script>
 	<script type="text/javascript" src="assets/jqwidgets/jqxwindow.js"></script>
-	<script type="text/javascript" src="assets/jqwidgets/jqxbutton.js"></script>
+	<script type="text/javascript" src="assets/jqwidgets/jqxbuttons.js"></script>
 	<script>
 		$(document).ready(function() {
 			$("#jqxwindow").jqxWindow({
