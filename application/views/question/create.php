@@ -105,6 +105,7 @@
 <script type="text/javascript" src="http://114.35.129.223/UniAsk/assets/selectbox/js/jquery.selectbox-0.2.js"></script>
 <script type="text/javascript">
 $(function () {
-	$("#catalog_school, #catalog_detail").selectbox();
+	$("#catalog_school").selectbox();
+	$("#catalog_detail").selectbox();
 });
 </script>
