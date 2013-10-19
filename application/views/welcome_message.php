@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="assets/jqwidgets/jqxwindow.js"></script>
 	<script>
 		$(document).ready(function() {
-			$("#jqxwindow").jqxWindow({height: 300, width: 600, theme: 'base'});
+			$("#jqxwindow").jqxWindow({height: 300, width: 680, theme: 'base'});
 		}); 
 	</script>
 
