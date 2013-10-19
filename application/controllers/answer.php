@@ -47,8 +47,7 @@ class Answer extends CI_Controller
 		$this->form_validation->set_rules('area', 'text', 'required');
 		if ($this->form_validation->run() === TRUE)
 		{	
-			mysqli_query("INSERT INTO `answer`(question_id,user_id,type,content,rating_plus,rating_minus,correct)");
-			VALUES ($ques_id,$this->session->userdata('user_id'),1,$this->input->post('area'),0,0,0);
+			mysqli_query("INSERT INTO `answer`(question_id,user_id,type,content,rating_plus,rating_minus,correct)VALUES (".$ques_id.",".$this->session->userdata('user_id').",1,".$this->input->post('area').",0,0,0)");
 			echo $this->input->post('area');
 			
 		}
