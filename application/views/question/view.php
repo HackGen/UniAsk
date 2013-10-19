@@ -9,7 +9,7 @@
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-	position: relative;
+	<!--position: relative;-->
 }
 
 #div {
