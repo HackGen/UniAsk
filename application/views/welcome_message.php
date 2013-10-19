@@ -41,13 +41,10 @@
 	</div>
 </header>
 
-<div class="container_12" style="z-index: 0;">
-	<div class="grid_12" style="z-index: 1; position: absolute;">
-		<div id="search_div">
-			<?php $this->load->view('search/index'); ?>
-		</div>
-	</div>
-	<div class="clear">
+<div id="search_div">
+	<?php $this->load->view('search/index'); ?>
+</div>
+<div class="container_12">
 	<div class="grid_12">
 		<?php
 			if($logged_in==TRUE) {
