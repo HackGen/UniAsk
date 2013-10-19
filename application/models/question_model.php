@@ -19,7 +19,7 @@ class Question_model extends CI_Model {
 		return $query->row_array();
 	}
 
-	public function get_hot_question)
+	public function get_hot_question()
 	{
 		$this->db->order_by("rating", "desc");
 		$query = $this->db->get('questions');
