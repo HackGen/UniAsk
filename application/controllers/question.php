@@ -11,7 +11,8 @@ class Question extends CI_Controller {
 		$this->load->library('session');
 		$this->load->helper('url');
 		$this->load->helper('date');
-		
+		$this->load->helper('form');
+		$this->load->library('form_validation');
 	}
 	
 	public function index()
@@ -69,8 +70,6 @@ class Question extends CI_Controller {
 		$this->load->view('question/view', $data);
 		
 
-		$this->load->helper('form');
-		$this->load->library('form_validation');
 		$this->load->view('answer/view',$data);
 		
 		//$this->load->view('answer/view',$data);
