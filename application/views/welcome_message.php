@@ -42,7 +42,8 @@
 		}
 		echo "<div id='question_create_button' style='margin:20px;'>最新問題</div>";
 		$data['question'] = $this->question_model->get_question();
-		$this->load->view('question/all', $data);
+		//$this->load->view('question/all', $data);
+		$this->load->view('question/latest', $data);
 
 	?>
 </div>

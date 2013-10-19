@@ -72,7 +72,7 @@ class Question extends CI_Controller {
 		//$this->load->view('answer/view',$data);
 		$this->load->view('templates/footer');
 	}
-	
+
 	public function all()
 	{
 		
