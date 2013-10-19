@@ -46,7 +46,7 @@
 <div id="div">
 	<?php 
 		$i = 0;
-		foreach ($hot as $questions): 
+		foreach ($question as $questions): 
 		if($i >= 5) break;
 		$i++;
 		$user = $this->question_model->get_user($questions['user_id']);
