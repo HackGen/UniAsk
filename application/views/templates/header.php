@@ -5,7 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/style.css" media="screen" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="<?php echo base_url(); ?>/assets/wysihtml5/parser_rules/advanced.js"></script>
-	<script src="<?php echo base_url(); ?>/assets/wysihtml5/dist/wysihtml5-0.3.0.js"></script>
+	<script src="<?php echo base_url(); ?>/assets/wysihtml5/dist/wysihtml5-0.3.0.min.js"></script>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+    	<link rel="stylesheet" href="css/stylesheet.css">
 	
 </head>
 <body>
