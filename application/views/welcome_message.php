@@ -15,7 +15,7 @@
 				height: 300,
 				width: 750,
 				theme: 'base',
-				autoopen: false,
+				//autoopen: false,
 				draggable: false,
 				resizable: false,
 				isModal: true,
