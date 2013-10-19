@@ -17,7 +17,6 @@
 
 		#hot_question_field {
 			width: 500px;
-			float: left;	
 		}
 		#latest_question_field {
 			width: 500px;

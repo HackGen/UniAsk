@@ -67,10 +67,33 @@ class Question extends CI_Controller {
 		
 		$this->load->view('templates/header', $data);
 		$this->load->view('question/view', $data);
-		//$this->load->view('answer/view',$data);
+		
+		$this->load->view('answer/view',$data);
 		
 		//$this->load->view('answer/view',$data);
 		$this->load->view('templates/footer');
+	}
+
+
+	public function insert()
+	{
+
+		$this->form_validation->set_rules('area', 'text', 'required');
+		if ($this->form_validation->run() === TRUE)
+		{	
+			$data1 = array(
+			'question_id' => $question_id,
+			'user_id' => $this->session->userdata('user_id'),
+			'type' => 1,
+			'content' => $this->input->post('area'),
+			'rating_plus' => 0,
+			'rating_minus' => 0,
+			'correct' => 0,
+			'date' => now(),
+			);
+			$this->db->insert('answer',$data1);
+			echo $this->input->post('area');
+		}
 	}
 
 	public function all()
