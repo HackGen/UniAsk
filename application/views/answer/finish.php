@@ -1,7 +1,7 @@
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="<?php echo base_url(); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
-<a href="#myModal" role="button" class="btn" data-toggle="modal">help</a>
+
 <div id="myModal" class="modal hide fade" tableindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal"aria-hidden="true">x</button>
