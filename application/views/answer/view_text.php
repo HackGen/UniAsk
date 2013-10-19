@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <br>
-<div id="wysihtml5-editor-toolbar">
+<div id="wysihtml5-toolbar">
   <a data-wysihtml5-command="bold">bold</a>
   <a data-wysihtml5-command="italic">italic</a>
   <a data-wysihtml5-command="insertOrderedList">insert ordered list</a>
