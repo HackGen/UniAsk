@@ -2,9 +2,11 @@
 
 
 <div id="wysihtml5-toolbar">
-  <a data-wysihtml5-command="bold">bold</a>
-  <a data-wysihtml5-command="italic">italic</a>
-  
+<ul class="commands">
+  <li data-wysihtml5-command="bold">bold</li>
+  <li data-wysihtml5-command="italic">italic</li>
+  <li data-wysihtml5-command="insertUnorderedList" title="Insert an unordered list" class="command"></li>
+  <li data-wysihtml5-command="insertOrderedList" title="Insert an ordered list" class="command"></li>
   <!-- Some wysihtml5 commands require extra parameters -->
   <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>
   <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>
@@ -12,6 +14,7 @@
   
   <!-- Some wysihtml5 commands like 'createLink' require extra paramaters specified by the user (eg. href) -->
   <a data-wysihtml5-command="createLink">insert link</a>
+<\ul>
   <div data-wysihtml5-dialog="createLink" style="display: none;">
     <label>
       Link:
