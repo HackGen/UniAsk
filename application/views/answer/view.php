@@ -13,7 +13,7 @@ echo $email."\n";
 </div>
 
 
-<div id="wysihtml5-toolbar" style="display: none;">
+<div id="wysihtml5-toolbar">
   <a data-wysihtml5-command="bold">bold</a>
   <a data-wysihtml5-command="italic">italic</a>
   
