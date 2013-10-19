@@ -96,7 +96,9 @@ class Question extends CI_Controller {
 			'date' => now(),
 			);
 			$this->db->insert('answer',$data1);
-			echo $this->input->post('area');
+			$this->load->view('answer/finish',$data1);
+			//echo $this->input->post('area');
+			
 		}
 	}
 	public function get_answer($question_id){
