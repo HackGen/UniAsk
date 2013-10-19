@@ -67,9 +67,7 @@
 
 .question_tag {
 	border-bottom: 1px solid #e6e6e6;
-}
-.question_tag #div {
-	float: left;
+	height: 30px;
 }
 </style>
 <!--<link href="http://114.35.129.223/UniAsk/assets/selectbox/css/jquery.selectbox.css" type="text/css" rel="stylesheet" />-->
@@ -84,8 +82,8 @@
 		</div>
 		<div class="question_post">
 			<div class="question_tag">
-				<div id="schoollist"></div>
-				<div id="detaillist"></div>
+				<div id="schoollist" style="float: left;"></div>
+				<div id="detaillist" style="float: left;"></div>
 			</div>
 <!--
 			<select name="catalog_school" id="catalog_school" tabindex="1">

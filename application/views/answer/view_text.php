@@ -7,6 +7,8 @@
   <a data-wysihtml5-command="insertOrderedList">insert ordered list</a>
   <a data-wysihtml5-command="insertUnorderedList">insert unordered list</a>
   
+  
+  
   <!-- Some wysihtml5 commands like 'createLink' require extra paramaters specified by the user (eg. href) -->
   <a data-wysihtml5-command="createLink">insert link</a>
   
