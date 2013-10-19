@@ -16,7 +16,7 @@
 	<div class="header_logo"><a href="<?php echo base_url(); ?>">UNIASK</a></div>
 	
 	<!--Search Part-->
-	<div id="search"><input type="text" id="search_text" placeholder="Search..." value="<?php echo urldecode($title); ?>" /></div>
+	<div id="search"><input type="text" id="search_text" placeholder="Search..." value="<?php echo $title; ?>" /></div>
 	<script type="text/javascript">
 	$( document ).ready(function() {
 		$('#search_text').keypress(function (e) {
