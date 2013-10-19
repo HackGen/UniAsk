@@ -26,14 +26,14 @@
 
 .question_post {
 	padding: 5px 10px;
-	border: 1px solid #dcdcdc;
+	border: 0px solid #dcdcdc;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
 
 .question_post textarea {
-	border: 0;
+	border: 1px solid #fff;
 	outline: 0;
 	padding: 4px 2px;
 	height: 50px;
@@ -41,7 +41,7 @@
 	resize: none;
 }
 .question_post textarea:hover, .question_post textarea:focus {
-	border-color: #0bb492;
+	border: 1px solid #0bb492;
 }
 
 .question_post input[type="submit"] {
@@ -65,6 +65,12 @@
 	border-top: 1px solid #e6e6e6;
 }
 
+.tag_button {
+	height: 10px;
+	width: 500px;
+	color: #aaa;
+}
+
 </style>
 
 <?php echo validation_errors(); ?>
@@ -76,24 +82,26 @@
 		</div>
 		<div class="question_post">
 			<textarea name="text"></textarea><br />
-			<div class="question_tag">
-				<select name="catalog_school">
-<?php
-$query = $this->db->query('SELECT school_name FROM catalog_school');
-foreach($query->result_array() as $row) {
-	echo '<option name="' . $row['school_name'] . '">' . $row['school_name'] . '</option>';
-}
-?>
-				</select>
-				<select name="catalog_detail">
-<?php
-$query = $this->db->query('SELECT detail_name FROM catalog_detail');
-foreach($query->result_array() as $row) {
-	echo '<option name="' . $row['detail_name'] . '">' . $row['detail_name'] . '</option>';
-}
-?>
-				</select>
-				<input type="submit" name="submit" value="發問" />
+			<div class="tag_button">
+				<div class="question_tag">
+					<select name="catalog_school">
+						<?php
+						$query = $this->db->query('SELECT school_name FROM catalog_school');
+						foreach($query->result_array() as $row) {
+							echo '<option name="' . $row['school_name'] . '">' . $row['school_name'] . '</option>';
+						}
+						?>
+					</select>
+					<select name="catalog_detail">
+						<?php
+						$query = $this->db->query('SELECT detail_name FROM catalog_detail');
+						foreach($query->result_array() as $row) {
+							echo '<option name="' . $row['detail_name'] . '">' . $row['detail_name'] . '</option>';
+						}
+						?>
+					</select>
+					<input type="submit" name="submit" value="發問" />
+				</div>
 			</div>
 		</div>
 	</form>
