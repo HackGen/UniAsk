@@ -39,7 +39,8 @@
 }
 
 .view_post_link {
-	font-size: 20px;
+	font-size: 15px;
+	line-height: 18px
 	font-weight: bold;
 }
 
