@@ -26,17 +26,17 @@
 
 .question_post {
 	padding: 5px 10px;
+	border: 1px solid #dcdcdc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .question_post textarea {
-	border: 1px solid #dcdcdc;
 	outline: 0;
 	padding: 4px 2px;
 	height: 50px;
 	width: 500px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
 	resize: none;
 }
 .question_post textarea:hover, .question_post textarea:focus {
