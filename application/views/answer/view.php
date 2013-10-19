@@ -34,7 +34,7 @@ echo $email."\n";
   </div>
 </div>
 <?php echo validation_errors(); ?>
-<?php echo form_open('answer/view/') ?>
+<?php echo form_open('answer/view/'.$question_id) ?>
 <form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea>
 <input type="submit" name="submit" value="回答" />
 </form>
