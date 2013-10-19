@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-
+<br>
 <div id="wysihtml5-toolbar">
   <a data-wysihtml5-command="bold">bold</a>
   <a data-wysihtml5-command="italic">italic</a>
-  <a data-wysihtml5-command="insertUnorderedList">insert an unordered list</a>
-  <a data-wysihtml5-command="insertOrderedList">insert an ordered list</a>
+  <a data-wysihtml5-command="insertOrderedList">insert ordered list</a>
+  <a data-wysihtml5-command="insertUnorderedList">insert unordered list</a>
   <!-- Some wysihtml5 commands require extra parameters -->
   <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>
   <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>
