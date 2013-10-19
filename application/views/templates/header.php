@@ -4,6 +4,14 @@
 	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>/assets/style.css" media="screen" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="/wysinhtml5/parser_rules/advanced.js"></script>
+	<script src="/wysihtml5/dist/wysihtml5-0.3.0.min.js"></script>
+	<script>
+		var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element
+  		toolbar:      "wysihtml5-toolbar", // id of toolbar element
+  		parserRules:  wysihtml5ParserRules // defined in parser rules set 
+		});
+	</script>
 </head>
 <body>
 	
