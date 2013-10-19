@@ -44,6 +44,8 @@ class Question_model extends CI_Model {
 			'content' => $this->input->post('text'),
 			'user_id' => $this->session->userdata('user_id'),
 			'user_fb_id' => $this->session->userdata('fb_id'),
+			'catalog_school' => $this->input->post('catalog_school'),
+			'catalog_detail' => $this->input->post('catalog_detail'),
 			'date' => now(),
 			
 		);
