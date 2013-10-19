@@ -41,25 +41,23 @@
 	</div>
 </header>
 
-<div class="container_12">
-	<div class="grid_2"></div>
-	<div class="grid_8">
-	<div id="search_div">
-		<?php $this->load->view('search/index'); ?>
+<div class="container_12" style="z-index: 0;">
+	<div class="grid_12" style="z-index: 1; position: absolute;">
+		<div id="search_div">
+			<?php $this->load->view('search/index'); ?>
+		</div>
 	</div>
-	</div>
-	<div class="grid_2"></div>
 	<div class="clear">
 	<div class="grid_12">
-	<?php
-		if($logged_in==TRUE) {
-			echo "<div class='container_header'>發問</div>";
-			echo "<div id='question_create_div'>";
-			
-			$this->load->view('question/create');
-			echo "</div>";
-		}
-?>
+		<?php
+			if($logged_in==TRUE) {
+				echo "<div class='container_header'>發問</div>";
+				echo "<div id='question_create_div'>";
+				
+				$this->load->view('question/create');
+				echo "</div>";
+			}
+	?>
 	</div>
 	<div class="clear"></div>
 	<div class="grid_6">
