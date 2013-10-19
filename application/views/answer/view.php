@@ -1,6 +1,9 @@
-<html>
-<body>
-<div id="div">
+
+<ul>
+	<li>1</li>
+	<li>2</li>
+</ul>
+	<div id="div">
 	<div id="view_div">
 		<div class="view_pic">
 			<img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" />
@@ -13,5 +16,4 @@
 	</div>
 </div>
 <?php echo $content; ?>
-</body>
-</html>
+
