@@ -18,7 +18,7 @@ class Search_model extends CI_Model {
 		}
 		
 		$query = $this->db->get("questions");
-		return $query->result_array();
+		return $query->row_array();
 	}
 	 
 	public function get_count_answer($question_id = FALSE) 
