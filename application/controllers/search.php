@@ -22,7 +22,7 @@ class Search extends CI_Controller {
 			$data['question'] = $this->search_model->get_search($search_keyword);
 			$data['count_answer'] = $this->search_model->get_count_answer("1");
 			print_r($data['question']);
-			echo $data['question']['question_id'];
+			echo $data['question']['0']['question_id'];
 
 			if (empty($data['question']))
 			{
