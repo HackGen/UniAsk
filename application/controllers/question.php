@@ -73,6 +73,7 @@ class Question extends CI_Controller {
 		$this->get_answer($question_id);
 		$this->load->view('answer/view_text',$data);
 		
+		
 		//$this->load->view('answer/view',$data);
 		$this->load->view('templates/footer');
 	}
@@ -100,6 +101,7 @@ class Question extends CI_Controller {
 			//echo $this->input->post('area');
 			
 		}
+		redirect('question/view/'.$question_id);
 	}
 	public function get_answer($question_id){
 		$query = $this->db->query("SELECT * FROM `answer` WHERE `question_id`='".$question_id."'");
