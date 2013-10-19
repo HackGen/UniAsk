@@ -53,7 +53,7 @@ $( document ).ready(function() {
 	$('#search_text').keypress(function (e) {
 	  if (e.which == 13) {
 		if($(this).val() && $(this).val()!=" ") {
-			window.location = '<?php echo base_url(); ?>search/get/'+$(this).val();
+			window.location = 'search/get/'+$(this).val();
 		}
 	  }
 	});
