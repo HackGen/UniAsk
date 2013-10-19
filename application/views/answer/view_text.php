@@ -32,8 +32,16 @@
 		var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element
   		toolbar:      "wysihtml5-toolbar", // id of toolbar element
   		parserRules:  wysihtml5ParserRules, // defined in parser rules set 
-		stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "css/editor.css"]
+		stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "<?php echo base_url(); ?>/assets/wysihtml5/website/css/stylesheet.css"]
 		});
+		
+		editor.on("load", function() {
+        var composer = editor.composer,
+            h1 = editor.composer.element.querySelector("h1");
+        if (h1) {
+          composer.selection.selectNode(h1);
+        }
+      });
 	</script>
 
 
