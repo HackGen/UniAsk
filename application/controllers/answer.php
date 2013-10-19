@@ -16,17 +16,19 @@ class Answer extends CI_Controller
 		$query = $this->db->query("SELECT * FROM `questions` WHERE `question_id`='".$ques_id."'");
 		if($query->num_rows() > 0){
 			foreach($query->result() as $questions){
-				echo $questions->user_id;
-				echo $questions->date;
-				echo $questions->content;
+				echo $questions->user_id."\n";
+				echo $questions->date."\n";
+				echo $questions->content."\n";
 				$user_id = $questions->user_id;			
 			}
 		}
+
+
 		$query = $this->db->query("SELECT * FROM `users` WHERE `user_id`='".$user_id."'");
 		if($query->num_rows() > 0){
 			foreach($query->result() as $user){
-				echo $user->fb_id;
-				echo $user->email;
+				echo $user->fb_id."\n";
+				echo $user->email."\n";
 				$fb_id = $user->fb_id;
 			}
 		}
