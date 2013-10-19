@@ -67,11 +67,9 @@ class Question extends CI_Controller {
 		}
 		
 		$this->load->view('templates/header', $data);
-		$this->load->view('question/view', $data);
-		
-		//$this->load->view('answer/view',$data);
-		
 
+
+		$this->load->view('question/view', $data);	
 		$this->get_answer($question_id);
 		if($this->session->userdata('name')!=NULL){
 			$this->load->view('answer/view_text',$data);
@@ -119,6 +117,7 @@ class Question extends CI_Controller {
 			$ans_data['rating_minus'] = $ans->rating_minus;
 			$ans_data['correct'] = $ans->correct;	
 			$ans_data['date'] = $ans->date;
+			$ans_data['user'] = $this->question_model->get_user($ans_data['user_id']);
 			$this->load->view('answer/view',$ans_data);		
 		}
 			
