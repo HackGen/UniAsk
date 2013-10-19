@@ -17,8 +17,8 @@ class Answer extends CI_Controller
 		if($query->num_rows() > 0){
 			foreach($query->result() as $questions){
 				echo "<img src=".$this->session->userdata('img')." height='35px' title=".$this->session->userdata('name')." />";
-				echo $questions['date'];
-				echo $questions['content'];			
+				echo $questions->date;
+				echo $questions->content;			
 			}
 		}
 		
