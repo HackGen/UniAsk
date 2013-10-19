@@ -35,9 +35,9 @@ echo $email."\n";
 </div>
 <?php echo validation_errors(); ?>
 <?php echo form_open('answer/view/') ?>
-<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea></form>
+<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea>
 <input type="submit" name="submit" value="回答" />
-
+</form>
 	<script>
 		var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element
   		toolbar:      "wysihtml5-toolbar", // id of toolbar element
