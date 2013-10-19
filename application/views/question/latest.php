@@ -25,20 +25,18 @@
 
 }
 
-.view_pic img {
-	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
 .view_post {
 	padding: 5px 10px;
 }
 
 .view_post .date {
 	position :absolute;
-	bottom: 15px;
 	right: 20px;
+}
+
+.view_post .tag {
+	border: 1px solid #9cb0d8;
+	background: #d9e7fe;
 }
 
 </style>
@@ -50,7 +48,9 @@
 	
 		<div id="view_div">
 			<div class="view_post">
-				<?php echo $questions['catalog_school']. ' ' . $questions['catalog_detail'] . ' '. $questions['content']?><br/>
+				<span class="tag"><?php echo $questions[catalog_school] ?></span>
+				<span class="tag"><?php echo $questions[catalog_school] ?></span>
+				<?php echo $questions['content'] ?><br/>
 				by <strong><?php echo $user['name'];?></strong><br/><span class="date"><?php echo date("M d Y",$questions['date']);?></span>
 			</div>
 		</div>
