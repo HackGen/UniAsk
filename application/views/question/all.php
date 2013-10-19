@@ -40,18 +40,7 @@
 	bottom: 15px;
 	right: 20px;
 }
-#view_div2 {
-	margin: 5px;
-	width: 800px;
-	display: inline-block;
-	text-align: left;
-	padding: 20px;
-	background: #fff;
-	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-	position: relative;
-}
+
 </style>
 
 <div id="div">

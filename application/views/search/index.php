@@ -48,7 +48,7 @@
 
 <div id="div">
 	<div id="search">
-		<input type="text" id="search_text" placeholder="搜尋你覺得困擾的問題..." />
+		<input type="text" id="search_text2" placeholder="搜尋你覺得困擾的問題..." />
 		<br/><br/>
 		例子: 交通大學 假單 | 如何繳費? | 獎學金
 	</div>
@@ -56,7 +56,7 @@
 
 <script>
 $( document ).ready(function() {
-	$('#search_text').keypress(function (e) {
+	$('#search_text2').keypress(function (e) {
 	  if (e.which == 13) {
 		if($(this).val() && $(this).val()!=" ") {
 			window.location = 'search/get/'+$(this).val();
