@@ -1954,7 +1954,11 @@ class CI_Email {
 			}
 		}
 
+<<<<<<< HEAD
 		$msg .= "<pre>".$this->_header_str."\n".htmlspecialchars($this->_subject)."\n".htmlspecialchars($this->_finalbody).'</pre>';
+=======
+		$msg .= "<pre>".htmlspecialchars($this->_header_str)."\n".htmlspecialchars($this->_subject)."\n".htmlspecialchars($this->_finalbody).'</pre>';
+>>>>>>> d1a856c6ad8281e9fd3658d43fc21763589244ec
 		return $msg;
 	}
 
