@@ -31,9 +31,6 @@
 		<button type="button" class="close" data-dismiss="modal"aria-hidden="true">x</button>
 		      <h3 id="myModalLabel">是否送出？</h3>
 	</div>
-	<div class="modal-body">
-		<p>Finish！</p>
-	</div>
 	<div class="modal-footer">
 		 <button class="btn" data-diamiss="modal" aria-hidden="true">確定</button>
 	</div>
