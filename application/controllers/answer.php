@@ -32,7 +32,7 @@ class Answer extends CI_Controller
 				$fb_id = $user->fb_id;
 			}
 		}
-		echo '<div class="view_pic"> <img src="https://graph.facebook.com/ '. $fb_id .'.picture?height=100&width=100" /></div>';
+		echo '<div class="view_pic"> <img src="https://graph.facebook.com/ '. $fb_id['id'] .'/picture?height=100&width=100" /></div>';
 			
 		
 		
