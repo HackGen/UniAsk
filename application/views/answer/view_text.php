@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="<?php echo base_url(); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
+
 <div id="wysihtml5-toolbar">
   <a data-wysihtml5-command="bold">bold</a>
   <a data-wysihtml5-command="italic">italic</a>
