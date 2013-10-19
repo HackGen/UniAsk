@@ -50,7 +50,7 @@
 	
 		<div id="view_div">
 			<div class="view_post">
-				<?php echo $question['catalog_school']. ' ' . $question['catalog_detail'] . ' '. $question['content']?><br/>
+				<?php echo $questions['catalog_school']. ' ' . $questions['catalog_detail'] . ' '. $questions['content']?><br/>
 				by <strong><?php echo $user['name'];?></strong><br/><span class="date"><?php echo date("M d Y",$questions['date']);?></span>
 			</div>
 		</div>
