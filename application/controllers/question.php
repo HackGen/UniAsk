@@ -70,9 +70,12 @@ class Question extends CI_Controller {
 		$this->load->view('question/view', $data);
 		
 		//$this->load->view('answer/view',$data);
-		$this->get_answer($question_id);
-		$this->load->view('answer/view_text',$data);
 		
+
+		$this->get_answer($question_id);
+		if($this->session->userdata('name')!=NULL){
+			$this->load->view('answer/view_text',$data);
+		}
 		
 		//$this->load->view('answer/view',$data);
 		$this->load->view('templates/footer');
