@@ -33,8 +33,8 @@ echo $email."\n";
     <a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
   </div>
 </div>
-<form><textarea id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea></form>
-
+<form><textarea name="area" id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus></textarea></form>
+<input type="submit" name="submit" value="回答" />
 
 	<script>
 		var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element
