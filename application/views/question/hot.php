@@ -1,3 +1,4 @@
+
 <style>
 #view_div {
 	margin: 5px;
@@ -44,10 +45,10 @@
 <div id="div">
 	<?php 
 		$i = 0;
-		foreach ($question as $questions): 
+		foreach ($hot as $questions): 
 		if($i >= 5) break;
 		$i++;
-		$user = $this->question_model->get_user($questions['user_id']);
+		$user = $this->question_model->get_user($hot['user_id']);
 	?>
 	
 		<div id="view_div">
@@ -61,5 +62,4 @@
 		<div style="clear:both;"></div>
 	<?php endforeach ?>
 </div>
-
 
