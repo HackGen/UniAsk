@@ -14,9 +14,10 @@ class Search extends CI_Controller {
 		$this->load->helper('date');
 	}
 	
-	public function get(urldecode($search_keyword))
+	public function get($search_keyword)
 	{
 		if(isset($search_keyword)) {
+			$search_keyword = urldecode($search_keyword);
 			$data['logged_in'] = $this->session->userdata('user_id');
 			$data['question'] = $this->search_model->get_search($search_keyword);
 
