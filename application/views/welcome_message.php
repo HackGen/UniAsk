@@ -30,7 +30,9 @@
 </header>
 
 <div id="container">
-	<div id="search_div"></div>
+	<div id="search_div">
+		<?php $this->load->view('search/index'); ?>
+	</div>
 
 	<?php
 		if($logged_in==TRUE) {
