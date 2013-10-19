@@ -69,7 +69,7 @@
 	top: 30px;
 	width: 200px;
 	z-index: 100;
-	height: 200px;
+	max-height: 80px; display: block;
 	overflow-y: auto;
 }
 .sbOptions li{

@@ -42,7 +42,7 @@
 }
 #view_div2 {
 	margin: 5px;
-	width: 600px;
+	width: 800px;
 	display: inline-block;
 	text-align: left;
 	padding: 20px;
