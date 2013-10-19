@@ -42,13 +42,13 @@ class Answer extends CI_Controller
         	$data['title'] = "發問";	
 		$this->load->view('templates/header', $data);
 		$this->load->view('answer/view',$data);
-		$this->load->view('templates/footer');
-		$this->form_validation->set_rules('text', 'text', 'required');
+		
+		$this->form_validation->set_rules('area', 'text', 'required');
 		if ($this->form_validation->run() === TRUE)
 		{	
 			echo $this->input->post('area');
 		}
-		
+		$this->load->view('templates/footer');
 	}
 	
 }
