@@ -7,7 +7,7 @@
 		<div class="view_post">
 			<strong><?php echo $name;?> 回答:</strong><br/>
 			<?php echo $content; ?>
-			<span class="date"><?php echo date("M d Y",$date);?></span>
+			<span><?php echo date("M d Y",$date);?></span>
 		</div>
 	</div>
 </div>
