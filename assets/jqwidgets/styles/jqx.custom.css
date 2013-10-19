@@ -52,16 +52,16 @@
 }
 .jqx-button-custom
 {
-  color: #343434;
+  color: #222222;
   text-shadow: none;
   border-color: #AAAAAA;
-  background-color: #FFFFFF;
-  background-image: -moz-linear-gradient(top, #EFEFEF, #EFEFEF);
-  background-image: -ms-linear-gradient(top, #EFEFEF, #EFEFEF);
-  background-image: -o-linear-gradient(top, #EFEFEF, #EFEFEF);
-  background-image: -webkit-gradient(linear, center top, center bottom, from(#EFEFEF), to(#EFEFEF));
-  background-image: -webkit-linear-gradient(top, #EFEFEF, #EFEFEF);
-  background-image: linear-gradient(top, #EFEFEF, #EFEFEF);
+  background-color: #594141;
+  background-image: -moz-linear-gradient(top, #594141, #EFEFEF);
+  background-image: -ms-linear-gradient(top, #594141, #EFEFEF);
+  background-image: -o-linear-gradient(top, #594141, #EFEFEF);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#594141), to(#EFEFEF));
+  background-image: -webkit-linear-gradient(top, #594141, #EFEFEF);
+  background-image: linear-gradient(top, #594141, #EFEFEF);
   -moz-background-clip: padding;
   background-clip: padding-box;
   -webkit-background-clip: padding-box;
