@@ -37,7 +37,7 @@
 
 .view_post .date {
 	position :absolute;
-	bottom: 15px;
+	bottom: 21px;
 	right: 20px;
 }
 
@@ -80,7 +80,7 @@
 				<span class="tag2"><a href='search/get/<?php echo $questions['catalog_detail']; ?>'><?php echo $questions['catalog_detail']; ?></a></span><br/>
 				<a class="view_post_link" href = 'http://114.35.129.223/UniAsk/question/view/<?php echo $questions['question_id'] ; ?>' ><?php echo $questions['content'] ?></a><br/>
 				<div class="user">by <strong><?php echo $user['name'];?></strong>&nbsp;|&nbsp;<?php echo date("M d Y",$questions['date']);?></div>
-				<span class="date"><strong><?php echo $count_answer;?></strong> 回答</span>
+				<span class="date"><strong><?php echo $count_answer;?></strong> 答覆</span>
 			</div>
 		</div>
 	
