@@ -16,9 +16,8 @@
 }
 
 .question_pic img {
-	margin-top: 35px;
-	height: 50px;
-	width: 50px;
+	height: 70px;
+	width: 70px;
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -91,7 +90,7 @@
 		<?php echo validation_errors(); ?>
 		<?php echo form_open('question/insert/'.$ques_id) ?>
 		<form>
-			<textarea name="area" id="wysihtml5-textarea" placeholder="幫助他，答覆問題..." autofocus rows="10" cols="50"></textarea>
+			<textarea name="area" id="wysihtml5-textarea" placeholder="幫助他，答覆問題..." autofocus rows="15" cols="52"></textarea>
 			<br>
 			<input type="submit" name="submit" value="回答" />
 		</form>
