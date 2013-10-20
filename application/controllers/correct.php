@@ -10,7 +10,7 @@ class Correct extends CI_Controller
 	}
 	public function updata ($ans_id)
 	{
-		$query = $this->db->query("UPDATA answer SET correct = 1 WHERE answer_id ='".$ans_id."'");
+		$query = $this->db->query("UPDATA answer SET correct = '1' WHERE answer_id ='".$ans_id."'");
 		echo "correct";
 	}
 }
