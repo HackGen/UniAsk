@@ -25,7 +25,12 @@
 
 .view_post .date {
 	position :absolute;
+	bottom: 21px;
 	right: 20px;
+}
+
+.view_post .user {
+	margin-top: 10px;
 }
 
 .view_post .tag1 {
