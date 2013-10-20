@@ -20,11 +20,9 @@ function correct(id)
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
-			alert(msg);
+			$("#send_correct").hide();
 		}
 	});
-	name = document.all.correct_b + id ;
-	name.style.display = 'block';
 }
 
 </script>
