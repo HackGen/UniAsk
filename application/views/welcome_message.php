@@ -16,11 +16,11 @@
 	<script>
 		$(document).ready(function() {
 			$("#jqxwindow").jqxWindow({
-				height: 300,
+				height: 220,
 				width: 750,
 				theme: 'base',
 				autoOpen: false,
-				draggable: false,
+				draggable: true,
 				resizable: false,
 				isModal: true,
 				modalOpacity: 0.3
