@@ -85,30 +85,28 @@
 	<div class="question_post">
 	
 		<div id="wysihtml5-toolbar" style="text-align: left; margin-bottom:5px;">
-			<a class="toolbar_button" data-wysihtml5-command="bold"><strong>B</strong></a>
-			<a class="toolbar_button" data-wysihtml5-command="italic"><i>i</i></a>
-			<a class="toolbar_button" data-wysihtml5-command="insertOrderedList">1.</a>
-			<a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&bull;</a>
-			<a class="toolbar_button" data-wysihtml5-command="createLink">link</a>
-		</div>
-
+		  <a class="toolbar_button" data-wysihtml5-command="bold"><strong>B</strong></a>
+		  <a class="toolbar_button" data-wysihtml5-command="italic"><i>i</i></a>
+		  <a class="toolbar_button" data-wysihtml5-command="insertOrderedList">1.</a>
+		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&bull;</a>
+		  <a class="toolbar_button" data-wysihtml5-command="createLink">link</a>
+		  
+		  <span data-wysihtml5-dialog="createLink" style="display: none;">
+			<label>
+			  &nbsp; Link:
+			  <input data-wysihtml5-dialog-field="href" value="http://" class="text">
+			</label>
+			<a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
+		  </div>
+		</span>
+	
 		<?php echo validation_errors(); ?>
-		
 		<?php echo form_open('question/insert/'.$ques_id) ?>
 		<form>
 			<textarea name="area" id="wysihtml5-textarea" placeholder="幫助他，答覆問題..." autofocus rows="15" cols="55"></textarea>
 			<br>
-			<span data-wysihtml5-dialog="createLink" style="display: none; float:left;">
-				<label>
-				  &nbsp; Link:
-				  <input data-wysihtml5-dialog-field="href" value="http://" class="text">
-				</label>
-				<a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
-			  </div>
-			</span>
 			<input type="submit" name="submit" value="回答" />
 		</form>
-		
 	</div>
 
 </div>
