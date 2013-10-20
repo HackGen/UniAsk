@@ -2,6 +2,7 @@
 #view_div2 {
 	margin: 10px;
 	width: 640px;
+	min-height: 150px;
 	display: inline-block;
 	text-align: left;
 	padding: 20px;
@@ -30,7 +31,7 @@
 	outline: 0;
 	color: #fff;
 	background: #12bb99;
-	padding: 10px;
+	padding: 5px 10px;
 }
 
 .rating_minus {
@@ -63,8 +64,8 @@
 				<?php 
 				if($correct == '0' && $logged_in == $question['user_id']){
 					echo '<div id = "send_correct_'.$answer_id.'">';
-					echo '<button id = "correct_b'.$answer_id.'" onClick="correct('.$answer_id.')">Correct!</button>';
-					echo '</div>"';
+					echo '<button class="completed_button" id = "correct_b'.$answer_id.'" onClick="correct('.$answer_id.')">Correct!</button>';
+					echo '</div>';
 				}
 				?>
 			</div>
