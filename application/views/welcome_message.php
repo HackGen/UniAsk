@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf8" />
 	<title>UniAsk :: 由你問大學</title>
+	<link rel="icon" href="<?=base_url()?>/favicon.ico" type="image/ico">
 	<link rel="stylesheet" type="text/css" href="assets/style.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="assets/jqwidgets/styles/jqx.base.css" />
 	<link rel="stylesheet" type="text/css" href="assets/jqwidgets/styles/jqx.custom.css" />
