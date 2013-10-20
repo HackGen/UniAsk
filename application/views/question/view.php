@@ -47,9 +47,9 @@
 			<?php echo $question['content']; ?>
 			<span class="date"><?php echo date("M d Y",$question['date']);?></span>
 			<?php
-if($logged_in == $question['user_id']) {
-	echo '<button>complete</button>';
-}
+				if($question['completed'] == 0 && $logged_in == $question['user_id']) {
+					echo '<button>complete</button>';
+				}
 			?>
 		</div>
 	</div>
