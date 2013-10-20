@@ -60,6 +60,17 @@
 	background: #0bb492;
 }
 
+.toolbar_button {
+	padding: 2px 5px;
+	background: #fff;
+	border: 1px solid #d1d1d1;
+}
+
+.toolbar_button:hover, .toolbar_button:focus {
+	border-color: #0bb492;
+}
+
+
 }
 </style>
 
@@ -71,12 +82,12 @@
 	</div>
 	<div class="question_post">
 	
-		<div id="wysihtml5-toolbar">
-		  <a data-wysihtml5-command="bold">bold</a>
-		  <a data-wysihtml5-command="italic">italic</a>
-		  <a data-wysihtml5-command="insertOrderedList">insert ordered list</a>
-		  <a data-wysihtml5-command="insertUnorderedList">insert unordered list</a>
-		  <a data-wysihtml5-command="createLink">insert link</a>
+		<div id="wysihtml5-toolbar" style="text-align: left;">
+		  <a class="toolbar_button" data-wysihtml5-command="bold"><strong>B</strong></a>
+		  <a class="toolbar_button" data-wysihtml5-command="italic"><i>I</i></a>
+		  <a class="toolbar_button" data-wysihtml5-command="insertOrderedList">1.</a>
+		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&diams;</a>
+		  <a class="toolbar_button" data-wysihtml5-command="createLink">link</a>
 		  
 		  <div data-wysihtml5-dialog="createLink" style="display: none;">
 			<label>
@@ -90,7 +101,7 @@
 		<?php echo validation_errors(); ?>
 		<?php echo form_open('question/insert/'.$ques_id) ?>
 		<form>
-			<textarea name="area" id="wysihtml5-textarea" placeholder="幫助他，答覆問題..." autofocus rows="15" cols="52"></textarea>
+			<textarea name="area" id="wysihtml5-textarea" placeholder="幫助他，答覆問題..." autofocus rows="15" cols="55"></textarea>
 			<br>
 			<input type="submit" name="submit" value="回答" />
 		</form>
