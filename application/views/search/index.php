@@ -64,7 +64,7 @@
 <div id="div">
 	<div id="search">
 		<h1>UNIASK</h1>
-		<input type="text" id="search_text2" placeholder="搜尋你覺得困擾的問題..." />
+		<input type="text" id="search_text2" placeholder="搜尋你覺得困擾的問題..." autofocus/>
 		<br/><br/>
 		例子: 交通大學 假單 | 如何繳費? | 獎學金 | 正妹
 		<br/><br/><br/>
