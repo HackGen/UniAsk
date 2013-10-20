@@ -60,6 +60,7 @@
 
 </style>
 
+
 <div id="div">
 	<div id="search">
 		<h1>UNIASK</h1>
@@ -75,15 +76,4 @@
 	</div>
 </div>
 
-<script>
-$( document ).ready(function() {
-	$('#search_text2').keypress(function (e) {
-	  if (e.which == 13) {
-		if($(this).val() && $(this).val()!=" ") {
-			window.location = 'search/get/'+$(this).val();
-		}
-	  }
-	});
-});
 
-</script>

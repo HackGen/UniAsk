@@ -31,7 +31,7 @@
 			echo '$("#windowButton").jqxButton({theme: "custom", width: 100});';
 			echo '$("#windowButton").click(function() {';
 			echo '$("#jqxwindow").jqxWindow("open");';
-			echo '})';
+			echo '});';
 			}
 ?>
 		}); 
@@ -109,6 +109,20 @@
 	UniAsk Copyright © 2013 by RTCG, Taiwan R.O.C.<br/>
 	<a href="http://github.com/HackGen/UniAsk" target="_blank">Contact Us</a>
 </footer>
+
+<script>
+	$( document ).ready(function() {
+		alert("a");
+		$('#search_text2').keypress(function (e) {
+		  if (e.which == 13) {
+			if($(this).val() && $(this).val()!=" ") {
+				window.location = 'search/get/'+$(this).val();
+			}
+		  }
+		});
+	});
+</script>
+
 
 </body>
 </html>

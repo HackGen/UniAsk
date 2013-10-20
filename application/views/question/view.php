@@ -36,7 +36,19 @@
 
 
 </style>
-
+<script>
+function complete(id) {
+	$.ajax({
+		url:"http://114.35.129.223/UniAsk/question/complete/"+id,
+		type:"POST",
+		datatype:'text',
+		success:function(msg){
+			redirect();
+		}
+		
+	});
+}
+</script>
 <div id="div">
 	<div id="view_div">
 		<div class="view_pic">
@@ -47,9 +59,9 @@
 			<?php echo $question['content']; ?>
 			<span class="date"><?php echo date("M d Y",$question['date']);?></span>
 			<?php
-if($logged_in == $question['user_id']) {
-	echo '<button>complete</button>';
-}
+				if($question['completed'] == 0 && $logged_in == $question['user_id']) {
+					echo '<button onclick="complete()">complete</button>';
+				}
 			?>
 		</div>
 	</div>
