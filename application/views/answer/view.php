@@ -15,7 +15,7 @@ function rating(id){
 function correct(id)
 {
 	$.ajax({
-		url:"http://114.35.129.223/UniAsk/correct/updata/"+id;
+		url:"http://114.35.129.223/UniAsk/correct/updata/"+id,
 		data: $('#send_correct').serialize(),
 		type:"POST",
 		datatype:'text',
