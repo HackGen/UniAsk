@@ -46,6 +46,8 @@
 
 .completed_button {
 	padding: 5px 20px;
+	border: 0px;
+	outline: 0;
 	background: #3f86ca;
 	color: #fff;
 	text-decoration: none;
@@ -79,7 +81,10 @@ function complete(id) {
 	<div id="view_div">
 
 		<div class="view_post">
-			<span class="title"><?php echo $question['content']; ?></span>
+			<span class="title">
+				<?php echo $question['content']; ?>&nbsp;
+				<?php if($questions['completed'] == 1) echo "<img src='http://www.cjies.com/uniask/completed.png' height='10px' title='已完成'/>"; ?>
+			</span>
 			<div class="user"><img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" height="16px"/> <strong><?php echo $user['name'];?></strong> | <?php echo date("M d Y",$question['date']);?></div>
 			<div class="completed">
 				<?php
