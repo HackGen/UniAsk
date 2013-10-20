@@ -7,8 +7,10 @@
 			<strong><?php echo $name;?> 回答:</strong><br/>
 			<?php echo $content; ?>
 			<div id="rating_plus">
-				<button onClick="rating(<?php echo $answer_id;?>)">+</button>
-				<button onClick="rating(<?php echo $answer_id;?>)">-</button>
+				<button onClick="rating_plus(<?php echo $answer_id;?>)">+</button>
+			</div>
+			<div id ="rating_minus">
+				<button onClick="rating_minus(<?php echo $answer_id;?>)">-</button>
 			</div>
 			<?php 
 			if($correct == '0' && $logged_in == $question['user_id']){

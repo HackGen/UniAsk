@@ -1,5 +1,5 @@
 <script>
-function rating(id){
+function rating_plus(id){
 	var URLs="http://114.35.129.223/UniAsk/receive_rating/plus/"+id;
 	$.ajax({
 		url:URLs,

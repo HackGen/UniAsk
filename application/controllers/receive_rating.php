@@ -25,19 +25,8 @@ class Receive_rating extends CI_Controller{
 			}
 	}
 	public function minus($ans_id){
-		echo $ans_id;
-		$query = $this->db->query("SELECT * FROM `answer` WHERE answer_id='".$ans_id."'");
-		if($query->num_rows()>0){
-			foreach($query->result() as $minus){
-				$rating_minus = $minus->rating_minus;
-				//print_r($plus);
-			}
-	
-			$rating_minus = $rating_minus+1;
-			$data = array('rating_minus' =>  $rating_minus);
-			$where = "answer_id =".$ans_id;
-			$str = $this->db->update('answer',$data,$where);
-			}
+		$query = "UPDATE answer SET rating_minus=rating_minus+1 WHERE answer_id=".$answer_id;
+			$this->db->query($query);
 	}
 
 
