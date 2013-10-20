@@ -16,7 +16,7 @@
 }
 
 .question_pic img {
-	margin-top: 5;
+	margin-top: 30px;
 	height: 70px;
 	width: 70px;
 	-moz-border-radius: 5px;
@@ -89,7 +89,7 @@
 		  <a class="toolbar_button" data-wysihtml5-command="italic"><i>i</i></a>
 		  <a class="toolbar_button" data-wysihtml5-command="insertOrderedList">1.</a>
 		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&bull;</a>
-		  <a class="toolbar_button" data-wysihtml5-command="createLink">link</a>
+		  <a class="toolbar_button" data-wysihtml5-command="createLink">Link</a>
 		  
 		  <span data-wysihtml5-dialog="createLink" style="display: none;">
 			<label>
