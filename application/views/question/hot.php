@@ -31,11 +31,18 @@
 .view_post .tag1 {
 	background: #9cb0d8;
 	padding: 2px 5px;
+	font-size: 10px;
 }
 
 .view_post .tag2 {
 	background: #d9e7fe;
 	padding: 2px 5px;
+	font-size: 10px;
+}
+
+.view_post_link {
+	font-size: 15px;
+	line-height: 25px;
 }
 
 </style>
@@ -52,8 +59,8 @@
 		<div id="view_div">
 			<div class="view_post">
 				<span class="tag1"><a href='search/get/<?php echo $questions['catalog_school']; ?>'><?php echo $questions['catalog_school']; ?></a></span>
-				<span class="tag2"><a href='search/get/<?php echo $questions['catalog_detail']; ?>'><?php echo $questions['catalog_detail']; ?></a></span>
-				<a href = 'http://114.35.129.223/UniAsk/question/view/<?php echo $questions['question_id'] ; ?>' ><?php echo $questions['content'] ?></a><br/>
+				<span class="tag2"><a href='search/get/<?php echo $questions['catalog_detail']; ?>'><?php echo $questions['catalog_detail']; ?></a></span><br/>
+				<a class="view_post_link" href = 'http://114.35.129.223/UniAsk/question/view/<?php echo $questions['question_id'] ; ?>' ><?php echo $questions['content'] ?></a><br/>
 				by <strong><?php echo $user['name'];?></strong><span class="date"><?php echo date("M d Y",$questions['date']);?></span>
 			</div>
 		</div>

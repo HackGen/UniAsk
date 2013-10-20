@@ -15,36 +15,6 @@
 	<script type="text/javascript" src="assets/jqwidgets/jqxdropdownlist.js"></script>
 	<script>
 		$(document).ready(function() {
-			var school_source = [
-				<?php
-					$query = $this->db->query('SELECT school_name FROM catalog_school');
-					foreach($query->result_array() as $row) {
-						echo '"' . $row['school_name'] . '",';
-					}
-				?>
-				];
-			var detail_source = [
-				<?php
-					$query = $this->db->query('SELECT detail_name FROM catalog_detail');
-					foreach($query->result_array() as $row) {
-						echo '"' . $row['detail_name'] . '",';
-					}
-				?>
-				];
-			$("#schoollist").jqxDropDownList({
-				source: school_source,
-				selectedIndex: 0,
-				width: 100,
-				height: 25,
-				autoDropDownHeight: true
-			});
-			$("#detaillist").jqxDropDownList({
-				source: detail_source,
-				selectedIndex: 0,
-				width: 100,
-				height: 25,
-				autoDropDownHeight: true
-			});
 			$("#jqxwindow").jqxWindow({
 				height: 300,
 				width: 750,
@@ -113,7 +83,7 @@
 	<div id="div">
 		<div id="form_div">
 			<div id="hot_question_field">
-				<div class='container_title' style='margin:20px;'>熱門問題</div>
+				<div class='container_title2' style='margin:20px;'>熱門問題</div>
 				<?php
 					$data['question'] = $this->question_model->get_hot_question();
 					$this->load->view('question/hot', $data);

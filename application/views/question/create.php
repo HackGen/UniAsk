@@ -78,8 +78,23 @@
 			</div>
 			<div class="question_post">
 				<div class="question_tag">
-					<div id="schoollist" style="float: left;"></div>
-					<div id="detaillist" style="float: left;"></div>
+					<select name="catalog_school" id="catalog_school" tabindex="1">
+				<?php
+					$query = $this->db->query('SELECT school_name FROM catalog_school');
+					foreach($query->result_array() as $row) {
+						  echo '<option name="' . $row['school_name'] . '">' . $row['school_name'] . '</option>';
+					}
+						?>
+				      </select>
+				      <select name="catalog_detail" id="catalog_detail" tabindex="1">
+				<?php
+
+					$query = $this->db->query('SELECT detail_name FROM catalog_detail');
+					foreach($query->result_array() as $row) {
+						  echo '<option name="' . $row['detail_name'] . '">' . $row['detail_name'] . '</option>';
+						}
+					?>
+			      </select>
 				</div>
 				<textarea name="text"></textarea><br />
 				<div class="question_submit">

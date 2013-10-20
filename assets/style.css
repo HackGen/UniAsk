@@ -135,12 +135,19 @@
 		outline: none;
 		border-color: #aaa;
 	}
-	
+
 	.container_title {
 		color: #0bb492;
 	    font-size: 30px;
 	    font-weight: bold;
 	}
+	
+	.container_title2 {
+		color: #3f86ca;
+	    font-size: 30px;
+	    font-weight: bold;
+	}
+
 	
 	#hot_question_field, #latest_question_field {
 		position: relative;
