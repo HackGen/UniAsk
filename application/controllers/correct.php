@@ -1,5 +1,5 @@
 <?php
-class Current extends CI_Controller
+class Corrent extends CI_Controller
 {
 	public function __construct()
 	{
@@ -13,8 +13,6 @@ class Current extends CI_Controller
 		$query = $this->db->query("UPDATA answer SET correct = 1 WHERE answer_id ='".$ans_id."'");
 		echo "correct";
 	}
-
-
 }
 
 ?>
