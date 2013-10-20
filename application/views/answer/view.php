@@ -40,11 +40,11 @@ function currect<?php echo $answer_id;?>()
 			<strong><?php echo $name;?> 回答:</strong><br/>
 			<?php echo $content; ?>
 			<form id="rating_plus">
-				<input type="button" name="rating_plus" value="+" onClick="rating()" />
-				<input type="button" name="rating_plus" value="-" onClick="rating()" />
+				<button onClick="rating()">+</button>
+				<button onClick="rating()">-</button>
 			</form>
 			<form id = "send_correct">
-			<input type="button" vlaue="it is correct!" onClick="correct<?php echo $answer_id;?>()" />
+			<button onClick="correct<?php echo $answer_id;?>()">Correct!</button>
 			</form>
 
 			<span><?php echo date("M d Y",$date);?></span>
