@@ -26,9 +26,7 @@ var currect<?php echo $answer_id;?>=function()
 }
 
 </script>
-	<form id = "send_correct">
-	<input type="button" vlaue="it is correct!" onClick="Submit()"/>
-	</form>
+
 
 	<div id="div">
 	<div id="view_div">
@@ -42,6 +40,10 @@ var currect<?php echo $answer_id;?>=function()
 				<input type="button" name="rating_plus" value="+" onClick="rating()/>
 				<input type="button" name="rating_plus" value="-" onClick="rating()/>
 			</form>
+			<form id = "send_correct">
+			<input type="button" vlaue="it is correct!" onClick="Submit()"/>
+			</form>
+
 			<span><?php echo date("M d Y",$date);?></span>
 		</div>
 	</div>
