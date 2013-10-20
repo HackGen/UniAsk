@@ -1,6 +1,6 @@
 <script>
 var rating=function(){
-	var URLs="<?http://114.35.129.223/UniAsk/receive_rating.php/plus/<?php echo $answer_id;?>"
+	var URLs="<?http://114.35.129.223/UniAsk/receive_rating/plus/<?php echo $answer_id;?>"
 	$.ajax({
 		url:URLs,
 		data:$('#rating_plus').serialize(),	
@@ -28,7 +28,7 @@ var currect<?php echo $answer_id;?>=function()
 </script>
 
 
-	<div id="div">
+<div id="div">
 	<div id="view_div">
 		<div class="view_pic">
 			<img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" />
