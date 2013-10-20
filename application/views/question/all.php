@@ -63,17 +63,19 @@
 </style>
 
 <div id="div">
+	<div style="display:inline-block; margin:20px;">搜尋 <strong><?php echo $title; ?></strong> 的結果...</div>
+	<div style="clear:both;"></div>
+	
 	<?php foreach ($question as $questions): 
 		$user = $this->question_model->get_user($questions['user_id']);
 		$count_answer = $this->search_model->get_count_answer($questions['question_id']);
 	?>
-
 		<div id="view_div">
 			<div class="view_post">
 				<span class="tag1"><a href='search/get/<?php echo $questions['catalog_school']; ?>'><?php echo $questions['catalog_school']; ?></a></span>
 				<span class="tag2"><a href='search/get/<?php echo $questions['catalog_detail']; ?>'><?php echo $questions['catalog_detail']; ?></a></span><br/>
 				<a class="view_post_link" href = 'http://114.35.129.223/UniAsk/question/view/<?php echo $questions['question_id'] ; ?>' ><?php echo $questions['content'] ?></a><br/>
-				by <strong><?php echo $user['name'];?>&nbsp;|&nbsp;<?php echo date("M d Y",$questions['date']);?></strong>
+				by <strong><?php echo $user['name'];?></strong>&nbsp;|&nbsp;<?php echo date("M d Y",$questions['date']);?>
 				<span class="date"><strong><?php echo $count_answer;?></strong> 回答</span>
 			</div>
 		</div>
