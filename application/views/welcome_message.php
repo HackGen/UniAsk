@@ -31,7 +31,7 @@
 			echo '$("#windowButton").jqxButton({theme: "custom", width: 100});';
 			echo '$("#windowButton").click(function() {';
 			echo '$("#jqxwindow").jqxWindow("open");';
-			echo '})';
+			echo '});';
 			}
 ?>
 		}); 
