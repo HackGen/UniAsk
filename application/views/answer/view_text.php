@@ -16,6 +16,7 @@
 }
 
 .question_pic img {
+	margin-top: 20px;
 	height: 70px;
 	width: 70px;
 	-moz-border-radius: 5px;
