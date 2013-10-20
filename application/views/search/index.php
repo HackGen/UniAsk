@@ -77,6 +77,7 @@
 
 <script>
 $( document ).ready(function() {
+	alert("a");
 	$('#search_text2').keypress(function (e) {
 	  if (e.which == 13) {
 		if($(this).val() && $(this).val()!=" ") {
