@@ -142,9 +142,9 @@ class Question extends CI_Controller {
 		//$this->load->view('templates/footer');
 	}
 
-	public function complete()
+	public function complete($question_id)
 	{
-		$query = "UPDATE questions SET completed=1 where question_id=" . $question['question_id'];
+		$query = "UPDATE questions SET completed=1 where question_id=" . $question_id;
 		$this->db->query($query);
 	}
 }
