@@ -25,7 +25,7 @@ class Receive_rating extends CI_Controller{
 			}
 	}
 	public function minus($ans_id){
-		$query = "UPDATE answer SET rating_minus=rating_minus+1 WHERE answer_id=".$answer_id;
+		$query = "UPDATE answer SET rating_minus=rating_minus+1 WHERE answer_id=".$ans_id;
 			$this->db->query($query);
 	}
 
