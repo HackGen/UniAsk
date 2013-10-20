@@ -43,6 +43,7 @@
 
 .title {
 	font-size: 22px;
+	line-height: 28px;
 }
 
 .user {
