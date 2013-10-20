@@ -38,8 +38,10 @@
 </style>
 <script>
 function complete(id) {
+	var URL = "http://114.35.129.223/UniAsk/question/complete/"+id;
+	alert(URL);
 	$.ajax({
-		url:"http://114.35.129.223/UniAsk/question/complete/"+id,
+		url: URL,
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
@@ -60,7 +62,7 @@ function complete(id) {
 			<span class="date"><?php echo date("M d Y",$question['date']);?></span>
 			<?php
 				if($question['completed'] == 0 && $logged_in == $question['user_id']) {
-					echo '<button onclick="complete()">complete</button>';
+					echo '<button onclick="complete('.$question['question_id'].')">complete</button>';
 				}
 			?>
 		</div>
