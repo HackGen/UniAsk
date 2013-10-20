@@ -13,7 +13,7 @@ class Correct extends CI_Controller
 		//$query = $this->db->query("UPDATA answer SET correct = '1' WHERE answer_id ='".$ans_id."'");
 		$data = array('correct' =>  1);
 		$where = "answer_id =".$ans_id;
-		$str = $this->db->updata('answer',$data,$where);
+		$str = $this->db->update('answer',$data,$where);
 		echo "correct";
 	}
 }

@@ -7,7 +7,7 @@ var rating=function(){
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
-			alert(msh);
+			alert(msg);
 		}
 		error:function(xhr,ajaxOptions,thrownError){
 			alert(xhr.status);
@@ -22,6 +22,9 @@ var currect<?php echo $answer_id;?>=function()
 		data: $('#send_correct').serialize(),
 		type:"POST",
 		datatype:'text',
+		success:function(msg){
+			alert(msg);
+		}
 	});
 }
 
