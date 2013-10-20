@@ -12,10 +12,10 @@ function rating(id){
 		
 	});
 }
-function currect<?php echo $answer_id;?>()
+function correct(id)
 {
 	$.ajax({
-		url:"http://114.35.129.223/UniAsk/correct/updata/<?php echo $answer_id;?>" ,
+		url:"http://114.35.129.223/UniAsk/correct/updata/"+id;
 		data: $('#send_correct').serialize(),
 		type:"POST",
 		datatype:'text',
@@ -41,7 +41,7 @@ function currect<?php echo $answer_id;?>()
 				<button onClick="rating(<?php echo $answer_id;?>)">-</button>
 			</div>
 			<div id = "send_correct">
-			<button onClick="correct<?php echo $answer_id;?>()">Correct!</button>
+			<button onClick="correct(<?php echo $answer_id;?>)">Correct!</button>
 			</div>
 
 			<span><?php echo date("M d Y",$date);?></span>
