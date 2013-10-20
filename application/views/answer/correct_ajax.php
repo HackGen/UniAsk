@@ -23,7 +23,8 @@ function correct(id)
 			alert(msg);
 		}
 	});
-	document.all.correct_b<?php echo $answer_id ;?>.style.visibility = 'hidden';
+	name = document.all.correct_b + id ;
+	name.style.visibility = 'hidden';
 }
 
 </script>
