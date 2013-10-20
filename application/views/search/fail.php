@@ -21,7 +21,7 @@
 <div id="div">
 	<div id="form_div">
 		<h1>:(</h1>
-		抱歉，無關於<strong><?php echo $title; ?></strong>的問題...<br/>
+		抱歉，無關於 <strong><?php echo $title; ?></strong> 的問題...<br/>
 	</div>
 </div>
 
