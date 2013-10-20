@@ -9,7 +9,7 @@
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-	<!--position: relative;-->
+	position: relative;
 }
 
 #div {
@@ -34,6 +34,16 @@
 	padding: 5px 10px;
 }
 
+.title {
+	font-size: 22px;
+}
+
+.user {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
 
 </style>
 <script>
@@ -52,13 +62,11 @@ function complete(id) {
 </script>
 <div id="div">
 	<div id="view_div">
-		<div class="view_pic">
-			<img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" />
-		</div>
+
 		<div class="view_post">
-			<strong><?php echo $user['name'];?> 問:</strong><br/>
-			<?php echo $question['content']; ?>
-			<span class="date"><?php echo date("M d Y",$question['date']);?></span>
+			<span class="title"><?php echo $question['content']; ?></span>
+			<div class="user"><img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" height="15px"/> <strong><?php echo $user['name'];?></strong> | <?php echo date("M d Y",$question['date']);?></div>
+			<span class="date"></span>
 			<?php
 				if($question['completed'] == 0 && $logged_in == $question['user_id']) {
 					echo '<button onclick="complete('.$question['question_id'].')">complete</button>';
