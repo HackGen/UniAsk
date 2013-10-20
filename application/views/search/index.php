@@ -48,13 +48,15 @@
 }
 
 .question_create_button {
-
 		background: #12bb99;
-    	font-size: 30px;
-    	font-weight: bold;
+    	font-size: 18px;
 		color: #fff;
 		padding: 8px 20px;
 		cursor: pointer;
+}
+
+.question_create_button:hover  {
+		background: #0bb492;
 }
 
 </style>
