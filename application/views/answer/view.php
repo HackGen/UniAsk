@@ -1,7 +1,7 @@
 <script>
-function rating(){
+var rating=function(){
 	var URLs="http://114.35.129.223/UniAsk/receive_rating/plus/<?php echo $answer_id;?>"
-	$.ajax({	
+	$.ajax({
 		url:URLs,
 		data:$('#rating_plus').serialize(),	
 		type:"POST",
@@ -15,7 +15,7 @@ function rating(){
 		}
 	});
 }
-function currect<?php echo $answer_id;?>()
+var currect<?php echo $answer_id;?>=function()
 {
 	$.ajax({
 		url:"http://114.35.129.223/UniAsk/correct/updata/<?php echo $answer_id;?>" ,
