@@ -9,7 +9,6 @@ class Receive_rating extends CI_Controller{
 	}
 
 	public function plus($ans_id){
-		echo $ans_id;
 		$query = $this->db->query("SELECT * FROM `answer` WHERE answer_id='".$ans_id."'");
 		if($query->num_rows()>0){
 			foreach($query->result() as $plus){
