@@ -16,7 +16,9 @@
 }
 
 .question_pic img {
-	margin-top: 31px;
+	margin-top: 35px;
+	height: 90px;
+	width: 90px;
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -74,7 +76,7 @@
 	<div id="form_div">
 		<?php echo form_open('question/create') ?>
 			<div class="question_pic">
-				<img src="<?php echo $this->session->userdata('img'); ?>"  height="80px"/>
+				<img src="<?php echo $this->session->userdata('img'); ?>" />
 			</div>
 			<div class="question_post">
 				<div class="question_tag">

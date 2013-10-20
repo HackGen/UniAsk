@@ -97,9 +97,8 @@
 	}
 	
 	#question_create_button {
-		color: #0bb492;
-	    font-size: 30px;
-	    font-weight: bold;
+		text-align: center;
+		padding: 5px;
 	}
 	
 	#question_create_div {
