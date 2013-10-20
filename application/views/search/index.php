@@ -60,18 +60,6 @@
 
 </style>
 
-<script>
-	$( document ).ready(function() {
-		alert("a");
-		$('#search_text2').keypress(function (e) {
-		  if (e.which == 13) {
-			if($(this).val() && $(this).val()!=" ") {
-				window.location = 'search/get/'+$(this).val();
-			}
-		  }
-		});
-	});
-</script>
 
 <div id="div">
 	<div id="search">
