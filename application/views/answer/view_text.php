@@ -16,7 +16,7 @@
 }
 
 .question_pic img {
-	margin-top: 20px;
+	margin-top: 5;
 	height: 70px;
 	width: 70px;
 	-moz-border-radius: 5px;
@@ -31,7 +31,7 @@
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
-.question_post textarea {
+.question_post textarea, .question_post input[type="text"] {
 	border: 1px solid #d1d1d1;
 	outline: 0;
 	padding: 4px 2px;
@@ -40,7 +40,7 @@
 	resize: none;
 }
 
-.question_post textarea:hover, .question_post textarea:focus {
+.question_post textarea:hover, .question_post textarea:focus, .question_post input[type="text"]:hover, .question_post input[type="text"]:focus {
 	border-color: #0bb492;
 }
 
@@ -84,21 +84,21 @@
 	</div>
 	<div class="question_post">
 	
-		<div id="wysihtml5-toolbar" style="text-align: left;">
+		<div id="wysihtml5-toolbar" style="text-align: left; margin-bottom:5px;">
 		  <a class="toolbar_button" data-wysihtml5-command="bold"><strong>B</strong></a>
 		  <a class="toolbar_button" data-wysihtml5-command="italic"><i>i</i></a>
 		  <a class="toolbar_button" data-wysihtml5-command="insertOrderedList">1.</a>
-		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&bull;.</a>
+		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&bull;</a>
 		  <a class="toolbar_button" data-wysihtml5-command="createLink">link</a>
 		  
-		  <div data-wysihtml5-dialog="createLink" style="display: none;">
+		  <span data-wysihtml5-dialog="createLink" style="display: none;">
 			<label>
-			  Link:
+			  &nbsp; Link:
 			  <input data-wysihtml5-dialog-field="href" value="http://" class="text">
 			</label>
 			<a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
 		  </div>
-		</div>
+		</span>
 	
 		<?php echo validation_errors(); ?>
 		<?php echo form_open('question/insert/'.$ques_id) ?>
