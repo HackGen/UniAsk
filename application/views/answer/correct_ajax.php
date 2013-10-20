@@ -3,7 +3,7 @@ function rating_plus(id){
 	var URLs="http://114.35.129.223/UniAsk/receive_rating/plus/"+id;
 	$.ajax({
 		url:URLs,
-		data:$('#rating_plus').serialize(),	
+		data:$('#rating_plus').serialize(),
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
