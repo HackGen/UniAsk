@@ -1,5 +1,5 @@
 <script>
-var rating=function(){
+function rating(){
 	var URLs="http://114.35.129.223/UniAsk/receive_rating/plus/<?php echo $answer_id;?>"
 	$.ajax({
 		url:URLs,
@@ -15,7 +15,7 @@ var rating=function(){
 		}
 	});
 }
-var currect<?php echo $answer_id;?>=function()
+function currect<?php echo $answer_id;?>()
 {
 	$.ajax({
 		url:"http://114.35.129.223/UniAsk/correct/updata/<?php echo $answer_id;?>" ,
