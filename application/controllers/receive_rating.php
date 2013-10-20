@@ -34,7 +34,7 @@ class Receive_rating extends CI_Controller{
 			}
 	
 			$rating_minus = $rating_minus+1;
-			$data = array('rating_plus' =>  $rating_minus);
+			$data = array('rating_minus' =>  $rating_minus);
 			$where = "answer_id =".$ans_id;
 			$str = $this->db->update('answer',$data,$where);
 			}
