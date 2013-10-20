@@ -95,8 +95,8 @@ function complete(id) {
 
 		<div class="view_post">
 			<span class="title">
-				<span class="tag1"><a href='search/get/<?php echo $question['catalog_school']; ?>'><?php echo $question['catalog_school']; ?></a></span>
-				<span class="tag2"><a href='search/get/<?php echo $question['catalog_detail']; ?>'><?php echo $question['catalog_detail']; ?></a></span><br/>
+				<span class="tag1"><a href='http://114.35.129.223/UniAsk/search/get/<?php echo $question['catalog_school']; ?>'><?php echo $question['catalog_school']; ?></a></span>
+				<span class="tag2"><a href='http://114.35.129.223/UniAsk/search/get/<?php echo $question['catalog_detail']; ?>'><?php echo $question['catalog_detail']; ?></a></span><br/>
 				<?php echo $question['content']; ?>&nbsp;
 				<?php if($question['completed'] == 1) echo "<img src='http://www.cjies.com/uniask/completed.png' height='15px' title='已完成'/>"; ?>
 			</span>
