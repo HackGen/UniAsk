@@ -69,7 +69,7 @@
 		<br/><br/><br/><br/>
 
 		<?php if($logged_in == TRUE) {
-		echo 'OR<br/><br/><label class="question_create_button" for="windowButton">發個問題</label><button id="windowButton" class="question_create_button" style="display:none;">發問</button>';
+		echo 'OR<br/><br/><label class="question_create_button" for="windowButton">發個問題</label><button id="windowButton" style="display:none;">發問</button>';
 		}
 		?>
 	</div>
