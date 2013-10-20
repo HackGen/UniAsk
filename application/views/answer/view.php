@@ -12,7 +12,7 @@
 			</div>
 			<?php 
 			if($correct == '0'){
-				echo '<div id = "send_correct">';
+				echo '<div id = "send_correct_'.$answer_id.'">';
 				echo '<button id = "correct_b'.$answer_id.'" onClick="correct('.$answer_id.')">Correct!</button>';
 				echo '</div>"';
 			}

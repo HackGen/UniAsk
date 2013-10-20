@@ -39,13 +39,12 @@
 <script>
 function complete(id) {
 	var URL = "http://114.35.129.223/UniAsk/question/complete/"+id;
-	alert(URL);
 	$.ajax({
 		url: URL,
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
-			redirect();
+			document.location.reload();
 		}
 		
 	});
