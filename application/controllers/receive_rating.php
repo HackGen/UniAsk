@@ -14,7 +14,7 @@ class Receive_rating extends CI_Controller{
 		if($query->num_rows()>0){
 			foreach($query->result() as $plus){
 				$rating_plus = $plus->rating_plus;
-				print_r($plus);
+				//print_r($plus);
 			}
 	
 			$rating_plus = $rating_plus+1;
