@@ -19,19 +19,15 @@
 	
 }
 
-.view_pic, .view_post {
+.view_post {
 	float: left;
-	margin: 5px;
+	padding: 5px 10px;
 }
 
-.view_pic img {
+.view_post img {
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-}
-
-.view_post {
-	padding: 5px 10px;
 }
 
 .title {
@@ -40,6 +36,7 @@
 
 .user {
 	position: absolute;
+	margin-top: 10px;
 	bottom: 10px;
 	left: 20px;
 }
@@ -65,7 +62,7 @@ function complete(id) {
 
 		<div class="view_post">
 			<span class="title"><?php echo $question['content']; ?></span>
-			<div class="user"><img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" height="15px"/> <strong><?php echo $user['name'];?></strong> | <?php echo date("M d Y",$question['date']);?></div>
+			<div class="user"><img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" height="20px"/> <strong><?php echo $user['name'];?></strong> | <?php echo date("M d Y",$question['date']);?></div>
 			<span class="date"></span>
 			<?php
 				if($question['completed'] == 0 && $logged_in == $question['user_id']) {
