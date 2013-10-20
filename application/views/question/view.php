@@ -29,6 +29,18 @@
     border-radius: 2px;
 }
 
+.view_post .tag1 {
+	background: #9cb0d8;
+	padding: 2px 5px;
+	font-size: 10px;
+}
+
+.view_post .tag2 {
+	background: #d9e7fe;
+	padding: 2px 5px;
+	font-size: 10px;
+}
+
 .title {
 	font-size: 22px;
 }
@@ -82,6 +94,8 @@ function complete(id) {
 
 		<div class="view_post">
 			<span class="title">
+				<span class="tag1"><a href='search/get/<?php echo $question['catalog_school']; ?>'><?php echo $question['catalog_school']; ?></a></span>
+				<span class="tag2"><a href='search/get/<?php echo $question['catalog_detail']; ?>'><?php echo $question['catalog_detail']; ?></a></span><br/>
 				<?php echo $question['content']; ?>&nbsp;
 				<?php if($question['completed'] == 1) echo "<img src='http://www.cjies.com/uniask/completed.png' height='15px' title='已完成'/>"; ?>
 			</span>
