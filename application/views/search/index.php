@@ -49,12 +49,12 @@
 
 .question_create_button {
 
-	background: #12bb99;
+		background: #12bb99;
     	font-size: 30px;
     	font-weight: bold;
-	color: #fff;
-	padding: 8px 20px;
-
+		color: #fff;
+		padding: 8px 20px;
+		cursor: pointer;
 }
 
 </style>
@@ -66,9 +66,9 @@
 		<br/><br/>
 		例子: 交通大學 假單 | 如何繳費? | 獎學金
 		<br/><br/>
-		OR<br/><br/>
+
 		<?php if($logged_in == TRUE) {
-		echo '	<button id="windowButton" class="question_create_button">發問</button>';
+		echo 'OR<br/><br/><label class="question_create_button" for="windowButton">發問</label><button id="windowButton" class="question_create_button" style="display:none;">發問</button>';
 		}
 		?>
 	</div>
