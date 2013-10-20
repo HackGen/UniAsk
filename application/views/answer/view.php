@@ -11,7 +11,7 @@
 				<button onClick="rating(<?php echo $answer_id;?>)">-</button>
 			</div>
 			<?php 
-			if($correct == '0'){
+			if($correct == '0' && $logged_in == $question['user_id']){
 				echo '<div id = "send_correct_'.$answer_id.'">';
 				echo '<button id = "correct_b'.$answer_id.'" onClick="correct('.$answer_id.')">Correct!</button>';
 				echo '</div>"';
