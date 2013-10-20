@@ -19,10 +19,10 @@ var currect<?php echo $answer_id;?>=function()
 {
 	$.ajax({
 		url:"application/controllers/correct.php/updata/<?php echo $answer_id;?>" ,
-		data: $(send_correct).serialize(),
+		data: $('#send_correct').serialize(),
 		type:"POST",
 		datatype:'text',
-	})
+	});
 }
 
 </script>
