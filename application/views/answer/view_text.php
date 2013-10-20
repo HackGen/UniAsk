@@ -64,6 +64,7 @@
 	padding: 2px 5px;
 	background: #fff;
 	border: 1px solid #d1d1d1;
+	margin: 0px 0px 5px 0px;
 }
 
 .toolbar_button:hover, .toolbar_button:focus {
