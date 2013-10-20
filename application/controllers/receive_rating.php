@@ -18,8 +18,11 @@ class Receive_rating extends CI_Controller{
 			}
 	
 			$rating_plus = $rating_plus+1;
-			echo $rating_plus;
-		}
+			//echo $rating_plus;
+			$data = array('rating_plus' =>  $rating_plus);
+			$where = "answer_id =".$ans_id;
+			$str = $this->db->update('answer',$data,$where);
+			}
 	}
 
 
