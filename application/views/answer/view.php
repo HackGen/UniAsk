@@ -39,13 +39,13 @@ function currect<?php echo $answer_id;?>()
 		<div class="view_post">
 			<strong><?php echo $name;?> 回答:</strong><br/>
 			<?php echo $content; ?>
-			<form id="rating_plus">
+			<div id="rating_plus">
 				<button onClick="rating()">+</button>
 				<button onClick="rating()">-</button>
-			</form>
-			<form id = "send_correct">
+			</div>
+			<div id = "send_correct">
 			<button onClick="correct<?php echo $answer_id;?>()">Correct!</button>
-			</form>
+			</div>
 
 			<span><?php echo date("M d Y",$date);?></span>
 		</div>
