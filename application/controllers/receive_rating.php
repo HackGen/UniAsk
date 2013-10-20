@@ -12,7 +12,7 @@ class Receive_rating extends CI_Controller{
 		echo $ans_id;
 		$query = $this->db->query("SELECT * FROM `answer` WHERE `answer_id`='".$ans_id."'");
 		foreach($query->result as $plus){
-			$ans_rating['rating_plus'] = $plus->rating_plus;
+			$rating_plus = $plus->rating_plus;
 		}
 		$rating_plus = $rating_plus+1;
 		echo $rating_plus;
