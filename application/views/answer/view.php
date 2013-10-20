@@ -1,6 +1,6 @@
 <script>
-function rating(){
-	var URLs="http://114.35.129.223/UniAsk/receive_rating/plus/<?php echo $answer_id;?>"
+function rating(id){
+	var URLs="http://114.35.129.223/UniAsk/receive_rating/plus/"+id;
 	$.ajax({
 		url:URLs,
 		data:$('#rating_plus').serialize(),	
@@ -37,8 +37,8 @@ function currect<?php echo $answer_id;?>()
 			<strong><?php echo $name;?> 回答:</strong><br/>
 			<?php echo $content; ?>
 			<div id="rating_plus">
-				<button onClick="rating()">+</button>
-				<button onClick="rating()">-</button>
+				<button onClick="rating(<?php echo $answer_id;?>)">+</button>
+				<button onClick="rating(<?php echo $answer_id;?>)">-</button>
 			</div>
 			<div id = "send_correct">
 			<button onClick="correct<?php echo $answer_id;?>()">Correct!</button>
