@@ -16,6 +16,7 @@
 }
 
 .question_pic img {
+	margin-top: 5;
 	height: 70px;
 	width: 70px;
 	-moz-border-radius: 5px;
@@ -30,7 +31,7 @@
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
-.question_post textarea {
+.question_post textarea, .question_post input[type="text"] {
 	border: 1px solid #d1d1d1;
 	outline: 0;
 	padding: 4px 2px;
@@ -39,7 +40,7 @@
 	resize: none;
 }
 
-.question_post textarea:hover, .question_post textarea:focus {
+.question_post textarea:hover, .question_post textarea:focus, .question_post input[type="text"]:hover, .question_post input[type="text"]:focus {
 	border-color: #0bb492;
 }
 
@@ -60,6 +61,18 @@
 	background: #0bb492;
 }
 
+.toolbar_button {
+	padding: 2px 5px;
+	background: #fff;
+	border: 1px solid #d1d1d1;
+	margin: 0px 0px 5px 0px;
+}
+
+.toolbar_button:hover, .toolbar_button:focus {
+	border-color: #0bb492;
+}
+
+
 }
 </style>
 
@@ -71,26 +84,26 @@
 	</div>
 	<div class="question_post">
 	
-		<div id="wysihtml5-toolbar">
-		  <a data-wysihtml5-command="bold">bold</a>
-		  <a data-wysihtml5-command="italic">italic</a>
-		  <a data-wysihtml5-command="insertOrderedList">insert ordered list</a>
-		  <a data-wysihtml5-command="insertUnorderedList">insert unordered list</a>
-		  <a data-wysihtml5-command="createLink">insert link</a>
+		<div id="wysihtml5-toolbar" style="text-align: left; margin-bottom:5px;">
+		  <a class="toolbar_button" data-wysihtml5-command="bold"><strong>B</strong></a>
+		  <a class="toolbar_button" data-wysihtml5-command="italic"><i>i</i></a>
+		  <a class="toolbar_button" data-wysihtml5-command="insertOrderedList">1.</a>
+		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&bull;</a>
+		  <a class="toolbar_button" data-wysihtml5-command="createLink">link</a>
 		  
-		  <div data-wysihtml5-dialog="createLink" style="display: none;">
+		  <span data-wysihtml5-dialog="createLink" style="display: none;">
 			<label>
-			  Link:
+			  &nbsp; Link:
 			  <input data-wysihtml5-dialog-field="href" value="http://" class="text">
 			</label>
 			<a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
 		  </div>
-		</div>
+		</span>
 	
 		<?php echo validation_errors(); ?>
 		<?php echo form_open('question/insert/'.$ques_id) ?>
 		<form>
-			<textarea name="area" id="wysihtml5-textarea" placeholder="幫助他，答覆問題..." autofocus rows="15" cols="52"></textarea>
+			<textarea name="area" id="wysihtml5-textarea" placeholder="幫助他，答覆問題..." autofocus rows="15" cols="55"></textarea>
 			<br>
 			<input type="submit" name="submit" value="回答" />
 		</form>
