@@ -7,11 +7,11 @@
 			<strong><?php echo $name;?> 回答:</strong><br/>
 			<?php echo $content; ?>
 			<div id="rating_plus">
-				<div id="number_plus"></div>
+				<div id="number_plus"><?php echo $rating_plus; ?></div>
 				<button onClick="rating_plus(<?php echo $answer_id;?>)">+</button>
 			</div>
 			<div id ="rating_minus">
-				<div id="number_plus"></div>
+				<div id="number_minus"><?php echo $rating_minus; ?></div>
 				<button onClick="rating_minus(<?php echo $answer_id;?>)">-</button>
 			</div>
 			<?php 
