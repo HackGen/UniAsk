@@ -71,7 +71,7 @@ class Question extends CI_Controller {
 
 
 		$this->load->view('question/view', $data);
-		$this->load->view('answer/correct_ajax');
+		$this->load->view('answer/correct_ajax', $data);
 		$this->get_answer($question_id);
 		if($this->session->userdata('name')!=NULL){
 			$this->load->view('answer/view_text',$data);
@@ -140,5 +140,11 @@ class Question extends CI_Controller {
 		//$this->load->view('templates/header', $data);
 		$this->load->view('question/all', $data);
 		//$this->load->view('templates/footer');
+	}
+
+	public function complete()
+	{
+		$query = "UPDATE questions SET completed=1 where question_id=" . $question['question_id'];
+		$this->db->query($query);
 	}
 }
