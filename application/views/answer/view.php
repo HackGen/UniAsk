@@ -9,10 +9,7 @@ function rating(){
 		success:function(msg){
 			alert(msg);
 		}
-		error:function(xhr,ajaxOptions,thrownError){
-			alert(xhr.status);
-			alert(thrownError);
-		}
+		
 	});
 }
 function currect<?php echo $answer_id;?>()
