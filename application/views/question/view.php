@@ -24,9 +24,9 @@
 }
 
 .view_post img {
-	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
 }
 
 .title {
@@ -83,7 +83,7 @@ function complete(id) {
 		<div class="view_post">
 			<span class="title">
 				<?php echo $question['content']; ?>&nbsp;
-				<?php if($questions['completed'] == 1) echo "<img src='http://www.cjies.com/uniask/completed.png' height='10px' title='已完成'/>"; ?>
+				<?php if($question['completed'] == 1) echo "<img src='http://www.cjies.com/uniask/completed.png' height='10px' title='已完成'/>"; ?>
 			</span>
 			<div class="user"><img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" height="16px"/> <strong><?php echo $user['name'];?></strong> | <?php echo date("M d Y",$question['date']);?></div>
 			<div class="completed">
