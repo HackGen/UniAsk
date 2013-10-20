@@ -24,7 +24,7 @@ function correct(id)
 		}
 	});
 	name = document.all.correct_b + id ;
-	name.style.visibility = 'hidden';
+	name.style.display = 'block';
 }
 
 </script>

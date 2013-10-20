@@ -16,6 +16,17 @@
 	<script type="text/javascript" src="assets/jqwidgets/jqxdropdownlist.js"></script>
 	<script>
 		$(document).ready(function() {
+
+			alert("a");
+			
+			$('#search_text2').keypress(function (e) {
+			  if (e.which == 13) {
+				if($(this).val() && $(this).val()!=" ") {
+					window.location = 'search/get/'+$(this).val();
+				}
+			  }
+			});
+			
 			$("#jqxwindow").jqxWindow({
 				height: 220,
 				width: 750,
@@ -25,16 +36,6 @@
 				resizable: false,
 				isModal: true,
 				modalOpacity: 0.3
-			});
-			
-			alert("a");
-			
-			$('#search_text2').keypress(function (e) {
-			  if (e.which == 13) {
-				if($(this).val() && $(this).val()!=" ") {
-					window.location = 'search/get/'+$(this).val();
-				}
-			  }
 			});
 			
 <?php
