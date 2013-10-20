@@ -46,6 +46,11 @@
 			<strong><?php echo $user['name'];?> 問:</strong><br/>
 			<?php echo $question['content']; ?>
 			<span class="date"><?php echo date("M d Y",$question['date']);?></span>
+			<?php
+if($logged_in == $question['user_id']) {
+	echo '<button>complete</button>';
+}
+			?>
 		</div>
 	</div>
 </div>
