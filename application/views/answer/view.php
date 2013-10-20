@@ -44,7 +44,7 @@
 	<div id="view_div2">
 	
 		<div class="view_post">
-			<img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" height="15px"/> <strong><?php echo $name;?></strong> | <?php echo date("M d Y",$date);?> <?php if($answer['correct'] == 1) echo "<img src='http://www.cjies.com/uniask/completed.png' height='15px' title='這是正確答案'/>"; ?>
+			<img src="https://graph.facebook.com/<?php echo $user['fb_id'];?>/picture?height=100&width=100" height="15px"/> <strong><?php echo $name;?></strong> | <?php echo date("M d Y",$date);?> <?php if($correct == 1) echo "<img src='http://www.cjies.com/uniask/completed.png' height='15px' title='這是正確答案'/>"; ?>
 			<br/><br/>
 			<div class="title"><?php echo $content; ?></div>
 			
