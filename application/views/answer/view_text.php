@@ -86,9 +86,9 @@
 	
 		<div id="wysihtml5-toolbar" style="text-align: left;">
 		  <a class="toolbar_button" data-wysihtml5-command="bold"><strong>B</strong></a>
-		  <a class="toolbar_button" data-wysihtml5-command="italic"><i>I</i></a>
+		  <a class="toolbar_button" data-wysihtml5-command="italic"><i>i</i></a>
 		  <a class="toolbar_button" data-wysihtml5-command="insertOrderedList">1.</a>
-		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&diams;</a>
+		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&bull;.</a>
 		  <a class="toolbar_button" data-wysihtml5-command="createLink">link</a>
 		  
 		  <div data-wysihtml5-dialog="createLink" style="display: none;">
