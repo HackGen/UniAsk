@@ -16,7 +16,7 @@
 }
 
 .question_pic img {
-	margin-top: 5;
+	margin-top: 25px;
 	height: 70px;
 	width: 70px;
 	-moz-border-radius: 5px;
@@ -91,20 +91,21 @@
 		  <a class="toolbar_button" data-wysihtml5-command="insertUnorderedList">&bull;</a>
 		  <a class="toolbar_button" data-wysihtml5-command="createLink">link</a>
 		  
-		  <span data-wysihtml5-dialog="createLink" style="display: none;">
-			<label>
-			  &nbsp; Link:
-			  <input data-wysihtml5-dialog-field="href" value="http://" class="text">
-			</label>
-			<a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
-		  </div>
-		</span>
+
 	
 		<?php echo validation_errors(); ?>
 		<?php echo form_open('question/insert/'.$ques_id) ?>
 		<form>
 			<textarea name="area" id="wysihtml5-textarea" placeholder="幫助他，答覆問題..." autofocus rows="15" cols="55"></textarea>
 			<br>
+			<span data-wysihtml5-dialog="createLink" style="display: none;">
+				<label>
+				  &nbsp; Link:
+				  <input data-wysihtml5-dialog-field="href" value="http://" class="text">
+				</label>
+				<a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
+			  </div>
+			</span>
 			<input type="submit" name="submit" value="回答" />
 		</form>
 	</div>
