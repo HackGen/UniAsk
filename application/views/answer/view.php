@@ -1,13 +1,13 @@
 <script>
 var rating=function(){
-	var URLs="<?http://114.35.129.223/UniAsk/receive_rating/plus/<?php echo $answer_id;?>"
+	var URLs="http://114.35.129.223/UniAsk/receive_rating/plus/<?php echo $answer_id;?>"
 	$.ajax({
 		url:URLs,
 		data:$('#rating_plus').serialize(),	
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
-			alert(msh);
+			alert(msg);
 		}
 		error:function(xhr,ajaxOptions,thrownError){
 			alert(xhr.status);
@@ -22,6 +22,9 @@ var currect<?php echo $answer_id;?>=function()
 		data: $('#send_correct').serialize(),
 		type:"POST",
 		datatype:'text',
+		success:function(msg){
+			alert(msg);
+		}
 	});
 }
 
