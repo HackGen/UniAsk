@@ -26,6 +26,17 @@
 				isModal: true,
 				modalOpacity: 0.3
 			});
+			
+			alert("a");
+			
+			$('#search_text2').keypress(function (e) {
+			  if (e.which == 13) {
+				if($(this).val() && $(this).val()!=" ") {
+					window.location = 'search/get/'+$(this).val();
+				}
+			  }
+			});
+			
 <?php
 			if($logged_in == TRUE) {
 			echo '$("#windowButton").jqxButton({theme: "custom", width: 100});';
@@ -112,14 +123,7 @@
 
 <script>
 	$( document ).ready(function() {
-		alert("a");
-		$('#search_text2').keypress(function (e) {
-		  if (e.which == 13) {
-			if($(this).val() && $(this).val()!=" ") {
-				window.location = 'search/get/'+$(this).val();
-			}
-		  }
-		});
+		
 	});
 </script>
 
