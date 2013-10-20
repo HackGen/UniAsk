@@ -20,7 +20,7 @@ function correct(id)
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
-			$(this).hide();
+			$("#send_correct_"+id).hide();
 		}
 	});
 }
