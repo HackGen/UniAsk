@@ -1,19 +1,19 @@
 <script>
 var rating=function(){
 	var URLs="<?php echo base_url(); ?>/application/controllers/receive_rating.php/plus/<?php echo $answer_id;?>"
-$.ajax({
-	url:URLs,
-	data:$('#rating_plus').serialize(),	
-	type:"POST",
-	datatype:'text',
-	success:function(msg){
-		alert(msh);
-	}
-	error:function(xhr,ajaxOptions,thrownError){
-		alert(xhr.status);
-		alert(thrownError);
-	}
-});
+	$.ajax({
+		url:URLs,
+		data:$('#rating_plus').serialize(),	
+		type:"POST",
+		datatype:'text',
+		success:function(msg){
+			alert(msh);
+		}
+		error:function(xhr,ajaxOptions,thrownError){
+			alert(xhr.status);
+			alert(thrownError);
+		}
+	});
 }
 var currect<?php echo $answer_id;?>=function()
 {
