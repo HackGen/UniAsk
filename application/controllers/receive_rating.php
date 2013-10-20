@@ -28,14 +28,13 @@ class Receive_rating extends CI_Controller{
 		echo $ans_id;
 		$query = $this->db->query("SELECT * FROM `answer` WHERE answer_id='".$ans_id."'");
 		if($query->num_rows()>0){
-			foreach($query->result() as $plus){
-				$rating_plus = $plus->rating_plus;
+			foreach($query->result() as $minus){
+				$rating_minus = $minus->rating_minus;
 				//print_r($plus);
 			}
 	
-			$rating_plus = $rating_plus-1;
-			//echo $rating_plus;
-			$data = array('rating_plus' =>  $rating_plus);
+			$rating_minus = $rating_minus+1;
+			$data = array('rating_plus' =>  $rating_minus);
 			$where = "answer_id =".$ans_id;
 			$str = $this->db->update('answer',$data,$where);
 			}
