@@ -7,7 +7,7 @@ function rating_plus(id){
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
-			
+			$("#number_plus").text(msg);
 		}
 		
 	});
@@ -20,7 +20,7 @@ function rating_minus(id){
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
-		
+			$("#number_minux").text(msg);
 		}
 	});
 }
