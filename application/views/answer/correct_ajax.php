@@ -32,7 +32,7 @@ function correct(id)
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
-			$("#send_correct_"+id).hide();
+			document.location.reload();
 		}
 	});
 }
