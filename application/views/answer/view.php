@@ -51,12 +51,12 @@
 			<div class="rating">
 				<div id="rating_plus" style="float:left;">
 					<button class="rating_plus" onClick="rating_plus(<?php echo $answer_id;?>)">+</button>
-					<div id="number_plus"><?php echo $rating_plus; ?></div>
+					<div id="number_plus<?php echo $answer_id;?>"><?php echo $rating_plus; ?></div>
 				</div>
 				
 				<div id ="rating_minus" style="float:left;">
 					<button class="rating_minus" onClick="rating_minus(<?php echo $answer_id;?>)">-</button>
-					<div id="number_minus"><?php echo $rating_minus; ?></div>
+					<div id="number_minus<?php echo $answer_id;?>"><?php echo $rating_minus; ?></div>
 				</div>
 			</div>
 			
