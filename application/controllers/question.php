@@ -87,6 +87,8 @@ class Question extends CI_Controller {
 		$this->form_validation->set_rules('area', 'text', 'required');
 		if ($this->form_validation->run() === TRUE)
 		{	
+			$query = "UPDATE questions SET rating=rating+1 WHERE question_id=".$question_id;
+			$this->db->query($query);
 			$data1 = array(
 			'question_id' => $question_id,
 			'user_id' => $this->session->userdata('user_id'),
