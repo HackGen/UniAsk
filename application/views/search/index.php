@@ -50,7 +50,7 @@
 .question_create_button {
 		background: #12bb99;
 		color: #fff;
-		padding: 8px 25px;
+		padding: 10px 25px;
 		cursor: pointer;
 }
 
@@ -66,10 +66,10 @@
 		<input type="text" id="search_text2" placeholder="搜尋你覺得困擾的問題..." />
 		<br/><br/>
 		例子: 交通大學 假單 | 如何繳費? | 獎學金
-		<br/><br/>
+		<br/><br/><br/><br/>
 
 		<?php if($logged_in == TRUE) {
-		echo 'OR<br/><br/><br/><br/><label class="question_create_button" for="windowButton">發個問題</label><button id="windowButton" class="question_create_button" style="display:none;">發問</button>';
+		echo 'OR<br/><br/><label class="question_create_button" for="windowButton">發個問題</label><button id="windowButton" class="question_create_button" style="display:none;">發問</button>';
 		}
 		?>
 	</div>
