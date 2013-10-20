@@ -38,8 +38,10 @@
 </style>
 <script>
 function complete(id) {
+	var URL = "http://114.35.129.223/UniAsk/question/complete/"+id;
+	alert(URL);
 	$.ajax({
-		url:"http://114.35.129.223/UniAsk/question/complete/"+id,
+		url: URL,
 		type:"POST",
 		datatype:'text',
 		success:function(msg){
